@@ -8,6 +8,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
+import Icons from 'unplugin-icons/vite'
 
 export default defineConfig({
   resolve: {
@@ -53,6 +54,10 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       dts: true,
+    }),
+
+    Icons({
+      compiler: 'vue3',
     }),
   ],
   build: {

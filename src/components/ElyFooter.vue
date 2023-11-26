@@ -1,5 +1,5 @@
 <template>
   <div>
-    <button>Click me</button>
+    Ely Footer
   </div>
 </template>

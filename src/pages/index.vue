@@ -1,9 +1,13 @@
 <script setup lang="ts">
+import { useMeta } from '~/composables/useMeta'
 
+useMeta({
+  title: 'Home',
+})
 </script>
 
 <template>
-  <div>
+  <ElyLayout>
     <h1>Welcome to Elysium</h1>
-  </div>
+  </ElyLayout>
 </template>

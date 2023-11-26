@@ -20,6 +20,7 @@ export default {
           800: '#161114',
           900: '#0F0B0C',
           950: '#080506',
+          primary: '#33292F',
         },
         ectasy: {
           50: '#FFF8F4',
@@ -33,6 +34,7 @@ export default {
           800: '#6F3D10',
           900: '#4A280A',
           950: '#1E0D03',
+          primary: '#FB8321',
         },
         koromiko: {
           50: '#FFFDF9',
@@ -46,6 +48,7 @@ export default {
           800: '#6F4B23',
           900: '#4A3618',
           950: '#1E180A',
+          primary: '#FFB653',
         },
         aquamarine: {
           50: '#F3F9FA',
@@ -59,6 +62,7 @@ export default {
           800: '#274D4F',
           900: '#1A2E30',
           950: '#0B1618',
+          primary: '#77FCFF',
         },
       },
     },
