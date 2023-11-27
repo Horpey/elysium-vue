@@ -10,7 +10,7 @@ useMeta({
 <template>
   <ElyLayout>
     <div class="absolute top-0 h-screen overflow-hidden mix-blend-overlay">
-      <img src="/images/moonnight.jpg" class="h-full" alt="background">
+      <img src="/images/moonnight.jpg" class="w-full" alt="background">
     </div>
 
     <div class="relative isolate">
