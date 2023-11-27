@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <button>Click me</button>
-  </div>
+  <button class="text-white">
+    Get Started
+  </button>
 </template>
