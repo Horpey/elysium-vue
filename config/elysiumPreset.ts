@@ -8,19 +8,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        thunder: {
-          50: '#F5F2F3',
-          100: '#EAE2E4',
-          200: '#CBB1BB',
-          300: '#AB808E',
-          400: '#6D3C50',
-          500: '#33292F', // Main Thunder Color
-          600: '#2D252A',
-          700: '#1F191D',
-          800: '#161114',
-          900: '#0F0B0C',
-          950: '#080506',
-          primary: '#33292F',
+        codgray: {
+          50: '#363636',
+          100: '#2f2f2f',
+          200: '#292929',
+          300: '#232323',
+          400: '#1e1e1e',
+          500: '#1d1d1d', // Main Cod Gray
+          600: '#1b1b1b',
+          700: '#191919',
+          800: '#171717',
+          900: '#141414',
+          950: '#0f0f0f',
+          primary: '#1d1d1d',
         },
         ectasy: {
           50: '#FFF8F4',
@@ -67,7 +67,7 @@ export default {
       },
     },
     fontFamily: {
-      headline: ['Exo', ...defaultTheme.fontFamily.serif],
+      headline: ['Bebas Neue', ...defaultTheme.fontFamily.serif],
       sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
       mono: ['IBM Plex Mono', ...defaultTheme.fontFamily.mono],
     },
