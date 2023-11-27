@@ -10,11 +10,11 @@ import PhGithubIcon from 'virtual:icons/ph/github-logo.svg'
       </div>
       <ul class="flex items-center gap-x-8">
         <li class="relative">
-          <a class="text-sm text-white" href="/getting-started">Documentation</a>
+          <a class="text-xs uppercase tracking-widest text-white" href="/getting-started">Documentation</a>
         </li>
 
         <li class="relative">
-          <a class="text-sm text-white" href="https://elysium.canny.io/" target="_blank">Road Map</a>
+          <a class="text-xs uppercase tracking-widest text-white" href="https://elysium.canny.io/" target="_blank">Road Map</a>
         </li>
       </ul>
       <div>

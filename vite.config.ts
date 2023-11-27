@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 
-import path, { resolve } from 'node:path'
+import path from 'node:path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
