@@ -7,15 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AppLayout: typeof import('./src/components/AppLayout.vue')['default']
     ElyButton: typeof import('./src/components/ElyButton.vue')['default']
     ElyFooter: typeof import('./src/components/ElyFooter.vue')['default']
     ElyLayout: typeof import('./src/components/ElyLayout.vue')['default']
     ElyNavbar: typeof import('./src/components/ElyNavbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheCounter: typeof import('./src/components/TheCounter.vue')['default']
-    TheFooter: typeof import('./src/components/TheFooter.vue')['default']
-    TheInput: typeof import('./src/components/TheInput.vue')['default']
   }
 }
