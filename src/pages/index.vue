@@ -9,6 +9,10 @@ useMeta({
 
 <template>
   <ElyLayout>
+    <div class="absolute top-0 h-screen overflow-hidden mix-blend-overlay">
+      <img src="/images/moonnight.jpg" class="h-full" alt="background">
+    </div>
+
     <div class="relative isolate">
       <div class="mx-auto max-w-4xl py-32">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -21,7 +25,7 @@ useMeta({
         </div>
 
         <div class="text-center">
-          <h1 class="font-headline text-6xl font-bold text-white">
+          <h1 class="font-headline text-7xl font-bold text-white">
             Where Vue Meets the Future of <br><span class="text-aquamarine-primary">Sci-Fi Web</span> Components
           </h1>
           <p class="mt-3 text-sm text-white">
