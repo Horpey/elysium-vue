@@ -65,6 +65,11 @@ export default {
           primary: '#77FCFF',
         },
       },
+      boxShadow: {
+        'bottom': '0px 6px #ffffff24',
+        'bottom-dark': '1px 6px #00000024',
+        'btn': '6px 7px #ffffff24',
+      },
     },
     fontFamily: {
       headline: ['Bebas Neue', ...defaultTheme.fontFamily.serif],

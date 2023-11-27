@@ -8,12 +8,12 @@ useMeta({
 </script>
 
 <template>
-  <ElyLayout>
-    <div class="absolute top-0 h-screen overflow-hidden bg-codgray-700">
-      <img src="/images/moonnight.jpg" class="w-full mix-blend-overlay" alt="background ">
+  <ElyLayout class="wrapper">
+    <div class="absolute top-0 h-screen w-full overflow-hidden bg-[url('/images/rdne.jpg')] bg-cover bg-center">
+      <div class="h-full w-full bg-koromiko-950/80" />
     </div>
 
-    <div class="relative isolate">
+    <div class="relative">
       <div class="mx-auto max-w-4xl py-32">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div
@@ -33,7 +33,7 @@ useMeta({
           </p>
 
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <ElyButton>
+            <ElyButton to="/getting-started/installation">
               Get Started
             </ElyButton>
           </div>
@@ -42,3 +42,12 @@ useMeta({
     </div>
   </ElyLayout>
 </template>
+
+<style scoped>
+.shooting-star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: #ffffff;
+}
+</style>
