@@ -28,6 +28,10 @@ const items = ref([
         title: 'Button',
         link: '/components/button',
       },
+      {
+        title: 'Loader',
+        link: '/components/loader',
+      },
     ],
   },
 ])

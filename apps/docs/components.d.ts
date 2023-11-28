@@ -16,7 +16,6 @@ declare module 'vue' {
     ElyNavbar: typeof import('./src/components/ElyNavbar.vue')['default']
     ElySidebar: typeof import('./src/components/ElySidebar.vue')['default']
     ElyTerminal: typeof import('./src/components/ElyTerminal.vue')['default']
-    ElyViewer: typeof import('./src/components/ElyViewer.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
