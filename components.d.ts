@@ -12,6 +12,7 @@ declare module 'vue' {
     ElyDocLayout: typeof import('./src/components/ElyDocLayout.vue')['default']
     ElyFooter: typeof import('./src/components/ElyFooter.vue')['default']
     ElyLayout: typeof import('./src/components/ElyLayout.vue')['default']
+    ElyLoader: typeof import('./src/components/ElyLoader.vue')['default']
     ElyNavbar: typeof import('./src/components/ElyNavbar.vue')['default']
     ElySidebar: typeof import('./src/components/ElySidebar.vue')['default']
     ElyTerminal: typeof import('./src/components/ElyTerminal.vue')['default']

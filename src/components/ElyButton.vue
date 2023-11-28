@@ -86,6 +86,7 @@ const buttonClass = computed(() => {
     :disabled="disabled"
     @click="onClick"
   >
+    <ElyLoader v-if="loading" />
     <span v-if="leftIcon">
       <component
         :is="leftIcon"
