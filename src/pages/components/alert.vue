@@ -12,7 +12,7 @@
         Notify users instantly with our versatile alert component. Seamlessly integrate notifications, warnings, and important messages into your user interface, enhancing user experience and communication within your application.
       </p>
 
-      <div class="mt-4">
+      <div class="my-10">
         <ElyAlert class="mt-4">
           <template #title>
             <span>Alert</span>
