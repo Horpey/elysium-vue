@@ -33,7 +33,7 @@ useMeta({
           </p>
 
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <ElyButton to="/getting-started/installation">
+            <ElyButton to="/getting-started/installation" theme="SECONDARY">
               Get Started
             </ElyButton>
           </div>

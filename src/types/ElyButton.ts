@@ -7,13 +7,6 @@ export const ELY_BUTTON_THEME = {
 
 export type ElyButtonThemeKey = keyof typeof ELY_BUTTON_THEME
 
-export const ELY_BUTTON_CONTEXT = {
-  LIGHT: 'light',
-  DARK: 'dark',
-} as const
-
-export type ElyButtonContextKey = keyof typeof ELY_BUTTON_CONTEXT
-
 export const ELY_BUTTON_SIZE = {
   LARGE: 'ely-control-size-large',
   MEDIUM: 'ely-control-size-default',

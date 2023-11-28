@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ButtonHTMLAttributes, FunctionalComponent } from 'vue'
+import { RouterLink } from 'vue-router'
 import type { ElyButtonSizeKey, ElyButtonThemeKey } from '~/types/ElyButton'
 
 interface Props extends /* @vue-ignore */ ButtonHTMLAttributes {
