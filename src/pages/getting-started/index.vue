@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { useMeta } from '~/composables/useMeta'
 
+useMeta({
+  title: 'Introduction',
+})
 </script>
 
 <template>

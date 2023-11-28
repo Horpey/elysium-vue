@@ -8,7 +8,7 @@ useMeta({
 </script>
 
 <template>
-  <ElyLayout class="wrapper">
+  <ElyLayout>
     <div class="absolute top-0 h-screen w-full overflow-hidden bg-[url('/images/rdne.jpg')] bg-cover bg-center">
       <div class="h-full w-full bg-koromiko-950/80" />
     </div>
@@ -42,12 +42,3 @@ useMeta({
     </div>
   </ElyLayout>
 </template>
-
-<style scoped>
-.shooting-star {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  background-color: #ffffff;
-}
-</style>
