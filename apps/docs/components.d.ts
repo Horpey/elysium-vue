@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     ElyAlert: typeof import('./src/components/ElyAlert.vue')['default']
     ElyButton: typeof import('./src/components/ElyButton.vue')['default']
+    ElyButtonEdit: typeof import('./src/components/ElyButtonEdit.vue')['default']
     ElyDocLayout: typeof import('./src/components/ElyDocLayout.vue')['default']
     ElyFooter: typeof import('./src/components/ElyFooter.vue')['default']
     ElyLayout: typeof import('./src/components/ElyLayout.vue')['default']

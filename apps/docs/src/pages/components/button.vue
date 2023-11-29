@@ -2,6 +2,7 @@
 import PhLightningIconFill from 'virtual:icons/ph/lightning-fill.svg'
 import PhChargingStationIconFill from 'virtual:icons/ph/charging-station-fill.svg'
 import PhMusicNotesPlusFill from 'virtual:icons/ph/music-notes-plus-fill.svg'
+import { ElyButton } from '@horpey/elysium-vue'
 import { useMeta } from '~/composables/useMeta'
 
 useMeta({
@@ -11,8 +12,8 @@ useMeta({
 
 <template>
   <ElyDocLayout>
-    <div class="mb-4 flex items-center gap-1.5 text-sm font-semibold text-koromiko-700">
-      Components
+    <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
+      Componentsp
     </div>
     <h1 class="font-headline text-5xl text-gray-900">
       Button

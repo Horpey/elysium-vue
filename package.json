@@ -1,13 +1,13 @@
 {
   "name": "@elysium-vue/monorepo",
   "type": "module",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "description": "Scifi UI Framework for Vue.js",
-  "main": "index.js",
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
   "scripts": {
     "docs": "pnpm -r --filter='./apps/**' run dev",
     "build": "pnpm -r --filter='./packages/**' run build",
