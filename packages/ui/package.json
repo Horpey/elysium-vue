@@ -10,8 +10,7 @@
     ".": {
       "import": "./dist/horpey-elysium-vue.es.js",
       "require": "./dist/horpey-elysium-vue.umd.js"
-    },
-    "./style.css": "./dist/style.css"
+    }
   },
   "main": "./dist/horpey-elysium-vue.umd.js",
   "module": "./dist/horpey-elysium-vue.es.js",
