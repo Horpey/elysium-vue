@@ -26,15 +26,16 @@ const props = withDefaults(defineProps<Props>(), {
   disabled: false,
   theme: 'PRIMARY',
   size: 'MEDIUM',
-  onClick: () => {},
+  onClick: () => { },
 })
 
 const isDisabled = computed(() => props.disabled || props.loading)
 
 const buttonClass = computed(() => {
-  const baseClass = 'border flex items-center space-x-2 px-5 py-2 text-xs font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 shadow-btn'
+  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 shadow-btn'
+
   let themeClass = ''
-  const sizeClass = ''
+  let sizeClass = ''
 
   switch (props.theme) {
     case 'PRIMARY':
@@ -51,6 +52,18 @@ const buttonClass = computed(() => {
       break
   }
 
+  switch (props.size) {
+    case 'SMALL':
+      sizeClass = 'text-xs px-3 py-1 h-8'
+      break
+    case 'MEDIUM':
+      sizeClass = 'text-sm px-4 py-2'
+      break
+    case 'LARGE':
+      sizeClass = 'text-base px-6 py-3'
+      break
+  }
+
   const classes = [baseClass, themeClass, sizeClass]
 
   if (isDisabled.value)
@@ -61,52 +74,84 @@ const buttonClass = computed(() => {
 </script>
 
 <template>
-  <RouterLink
-    v-if="to"
-    :class="buttonClass"
-    :disabled="disabled"
-    :to="to"
-  >
-    <span><slot /></span>
+  <RouterLink v-if="to" class="inline-block" :class="buttonClass" :disabled="disabled" :to="to">
+    <span :class="{
+      'flex items-center': loading || leftIcon || rightIcon,
+      'space-x-1': size === 'SMALL' && (loading || leftIcon || rightIcon),
+      'space-x-2': size === 'MEDIUM' || size === 'LARGE' && (loading || leftIcon || rightIcon),
+    }">
+      <ElyLoader :size="size" theme="LIGHT" v-if="loading" />
+      <span v-if="leftIcon">
+        <component :is="leftIcon" :class="{
+          'h-3 w-3': size === 'SMALL',
+          'h-4 w-4': size === 'MEDIUM',
+          'h-5 w-5': size === 'LARGE',
+        }" />
+      </span>
+      <span>
+        <slot />
+      </span>
+      <span v-if="rightIcon">
+        <component :is="rightIcon" :class="{
+          'h-3 w-3': size === 'SMALL',
+          'h-4 w-4': size === 'MEDIUM',
+          'h-5 w-5': size === 'LARGE',
+        }" />
+      </span>
+    </span>
   </RouterLink>
 
-  <a
-    v-else-if="href"
-    :class="buttonClass"
-    :disabled="disabled"
-    :href="href"
-    :target="target"
-  >
-    <span><slot /></span>
+  <a v-else-if="href" class="inline-block" :class="buttonClass" :disabled="disabled" :href="href" :target="target">
+    <span :class="{
+      'flex items-center': loading || leftIcon || rightIcon,
+      'space-x-1': size === 'SMALL' && (loading || leftIcon || rightIcon),
+      'space-x-2': size === 'MEDIUM' || size === 'LARGE' && (loading || leftIcon || rightIcon),
+    }">
+      <ElyLoader :size="size" theme="LIGHT" v-if="loading" />
+      <span v-if="leftIcon">
+        <component :is="leftIcon" :class="{
+          'h-3 w-3': size === 'SMALL',
+          'h-4 w-4': size === 'MEDIUM',
+          'h-5 w-5': size === 'LARGE',
+        }" />
+      </span>
+      <span>
+        <slot />
+      </span>
+      <span v-if="rightIcon">
+        <component :is="rightIcon" :class="{
+          'h-3 w-3': size === 'SMALL',
+          'h-4 w-4': size === 'MEDIUM',
+          'h-5 w-5': size === 'LARGE',
+        }" />
+      </span>
+    </span>
   </a>
 
-  <button
-    v-else
-    :class="buttonClass"
-    :disabled="disabled"
-    @click="onClick"
-  >
-    <ElyLoader v-if="loading" />
-    <span v-if="leftIcon">
-      <component
-        :is="leftIcon"
-        :class="{
+  <button v-else :class="buttonClass" :disabled="disabled" @click="onClick">
+    <span :class="{
+      'flex items-center': loading || leftIcon || rightIcon,
+      'space-x-1': size === 'SMALL' && (loading || leftIcon || rightIcon),
+      'space-x-2': size === 'MEDIUM' || size === 'LARGE' && (loading || leftIcon || rightIcon),
+    }">
+      <ElyLoader :size="size" theme="LIGHT" v-if="loading" />
+      <span v-if="leftIcon">
+        <component :is="leftIcon" :class="{
           'h-3 w-3': size === 'SMALL',
           'h-4 w-4': size === 'MEDIUM',
           'h-5 w-5': size === 'LARGE',
-        }"
-      />
-    </span>
-    <span><slot /></span>
-    <span v-if="rightIcon">
-      <component
-        :is="rightIcon"
-        :class="{
+        }" />
+      </span>
+      <span>
+        <slot />
+      </span>
+      <span v-if="rightIcon">
+        <component :is="rightIcon" :class="{
           'h-3 w-3': size === 'SMALL',
           'h-4 w-4': size === 'MEDIUM',
           'h-5 w-5': size === 'LARGE',
-        }"
-      />
+        }" />
+      </span>
     </span>
   </button>
 </template>

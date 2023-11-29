@@ -25,6 +25,10 @@ const items = ref([
         link: '/components/alert',
       },
       {
+        title: 'Avatar',
+        link: '/components/avatar',
+      },
+      {
         title: 'Button',
         link: '/components/button',
       },
@@ -48,12 +52,10 @@ const items = ref([
         <ul class="space-y-3 border-l border-gray-200">
           <li v-for="(child, idx) in item.children" :key="idx">
             <RouterLink
-              class="-ml-px block border-l border-transparent pl-4 text-xs hover:border-slate-400"
-              :class="{
+              class="-ml-px block border-l border-transparent pl-4 text-xs hover:border-slate-400" :class="{
                 'border-l-koromiko-700 text-koromiko-700 ': child.link === $route.path,
                 'border-l-gray-200 text-gray-400 ': child.link !== $route.path,
-              }"
-              :to="child.link"
+              }" :to="child.link"
             >
               {{ child.title }}
             </RouterLink>

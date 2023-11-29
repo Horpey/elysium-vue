@@ -21,10 +21,31 @@ useMeta({
 
     <div class="my-4">
       <p class="text-sm leading-relaxed">
-        Elevate user interaction effortlessly with our sleek and responsive button component, perfect for seamless calls to action in your application.
+        Elevate user interaction effortlessly with our sleek and responsive button component, perfect for seamless calls
+        to action in your application.
       </p>
 
       <div class="my-10 flex flex-col space-y-4">
+        <p class="font-mono text-xs uppercase tracking-wider">
+          Sizes
+        </p>
+        <div class="flex items-start space-x-4">
+          <ElyButton size="LARGE">
+            Button
+          </ElyButton>
+
+          <ElyButton size="MEDIUM">
+            Button
+          </ElyButton>
+
+          <ElyButton size="SMALL">
+            Button
+          </ElyButton>
+        </div>
+
+        <p class="font-mono text-xs uppercase tracking-wider">
+          Theme
+        </p>
         <div class="flex space-x-4">
           <ElyButton>
             Button
@@ -43,6 +64,9 @@ useMeta({
           </ElyButton>
         </div>
 
+        <p class="font-mono text-xs uppercase tracking-wider">
+          Disabled
+        </p>
         <div class="flex space-x-4">
           <ElyButton :disabled="true">
             Button
@@ -61,6 +85,9 @@ useMeta({
           </ElyButton>
         </div>
 
+        <p class="font-mono text-xs uppercase tracking-wider">
+          Button Icons
+        </p>
         <div class="flex space-x-4">
           <ElyButton :left-icon="PhLightningIconFill">
             Button
@@ -71,6 +98,27 @@ useMeta({
           </ElyButton>
 
           <ElyButton :left-icon="PhMusicNotesPlusFill" theme="TERTIARY">
+            Button
+          </ElyButton>
+        </div>
+
+        <p class="font-mono text-xs uppercase tracking-wider">
+          Loading
+        </p>
+        <div class="flex space-x-4">
+          <ElyButton :loading="true">
+            Button
+          </ElyButton>
+
+          <ElyButton :loading="true" theme="SECONDARY">
+            Button
+          </ElyButton>
+
+          <ElyButton :loading="true" theme="TERTIARY">
+            Button
+          </ElyButton>
+
+          <ElyButton :loading="true" theme="DESTRUCTIVE">
             Button
           </ElyButton>
         </div>

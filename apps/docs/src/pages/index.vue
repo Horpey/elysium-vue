@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PhSparkleIcon from 'virtual:icons/ph/sparkle-duotone'
+import { ElyButton } from '@horpey/elysium-vue'
 import { useMeta } from '~/composables/useMeta'
 
 useMeta({
@@ -33,7 +34,8 @@ useMeta({
           </p>
 
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <ElyButton to="/getting-started/installation" theme="SECONDARY">
+            <!-- to="/getting-started/installation" theme="SECONDARY" -->
+            <ElyButton theme="SECONDARY">
               Get Started
             </ElyButton>
           </div>

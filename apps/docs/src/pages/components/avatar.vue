@@ -3,7 +3,7 @@ import { ElyLoader } from '@horpey/elysium-vue'
 import { useMeta } from '~/composables/useMeta'
 
 useMeta({
-  title: 'Loader',
+  title: 'Avatar',
 })
 </script>
 
@@ -13,25 +13,21 @@ useMeta({
       Components
     </div>
     <h1 class="font-headline text-5xl text-gray-900">
-      Loader
+      Avatar
     </h1>
 
     <div class="my-4">
       <p class="text-sm leading-relaxed">
-        Effortlessly integrate our versatile loader component to enhance user experience by providing visual feedback
-        during data loading or background processes, ensuring a smooth and engaging interface.
+        Add a personal touch to your user interface with our Avatar component. Seamlessly incorporate profile images
+        or user icons for a visually engaging and personalized experience in your application.
       </p>
 
       <div class="my-10 flex flex-col space-y-4">
         <p class="font-mono text-xs uppercase tracking-wider">
-          Sizes
+          Default
         </p>
         <div class="flex space-x-4">
           <ElyLoader size="SMALL" />
-
-          <ElyLoader size="MEDIUM" />
-
-          <ElyLoader size="LARGE" />
         </div>
       </div>
     </div>
