@@ -1,6 +1,10 @@
+<script lang="ts" setup>
+import { ElyAlert } from '@horpey/elysium-vue'
+</script>
+
 <template>
   <ElyDocLayout>
-    <div class="mb-4 flex items-center gap-1.5 text-sm font-semibold text-koromiko-700">
+    <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
       Components
     </div>
     <h1 class="font-headline text-5xl text-gray-900">
