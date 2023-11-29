@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "docs": "pnpm -r --filter='./apps/**' run dev",
-    "build": "pnpm -r --filter='./packages/**' run build",
+    "build": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run build && pnpm -r --parallel --filter='./apps/**' run build",
     "dev": "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run dev",
     "test": "pnpm -r --filter='./packages/**' run test",
     "test:apps": "pnpm -r --filter='./apps/**' run test",
