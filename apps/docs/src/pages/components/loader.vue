@@ -4,7 +4,7 @@ import { ElyLoader } from '@horpey/elysium-vue'
 
 <template>
   <ElyDocLayout>
-    <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
+    <div class="mb-4 flex items-center gap-1.5 text-sm font-semibold text-koromiko-700">
       Components
     </div>
     <h1 class="font-headline text-5xl text-gray-900">

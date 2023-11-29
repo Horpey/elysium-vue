@@ -9,7 +9,7 @@ useMeta({
 
 <template>
   <ElyDocLayout>
-    <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
+    <div class="mb-4 flex items-center gap-1.5 text-sm font-semibold text-koromiko-700">
       Getting Started
     </div>
     <h1 class="font-headline text-5xl text-gray-900">
@@ -31,12 +31,12 @@ useMeta({
       <ul>
         <li class="my-2">
           <a
-            class="text-koromiko-700 hover:text-koromiko-600 text-sm" href="https://v3.vuejs.org/" target="_blank"
+            class="text-sm text-koromiko-700 hover:text-koromiko-600" href="https://v3.vuejs.org/" target="_blank"
           >Vue 3</a>
         </li>
         <li class="my-2">
           <a
-            class="text-koromiko-700 hover:text-koromiko-600 text-sm" href="https://tailwindcss.com/" target="_blank"
+            class="text-sm text-koromiko-700 hover:text-koromiko-600" href="https://tailwindcss.com/" target="_blank"
           >Tailwind CSS</a>
         </li>
       </ul>
@@ -50,7 +50,7 @@ useMeta({
       </p>
 
       <ElyTerminal class="mt-4">
-        <code class="text-koromiko-700 text-xs">
+        <code class="text-xs text-koromiko-700">
           <span class="opacity-50"># With pnpm</span>
           <br>
           pnpm install elysium-ui
