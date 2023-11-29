@@ -7,7 +7,15 @@
   "description": "Scifi UI Framework for Vue.js",
   "author": "",
   "license": "ISC",
-  "keywords": [],
+  "keywords": [
+    "components",
+    "design",
+    "elysium",
+    "library",
+    "ui",
+    "vue",
+    "web"
+  ],
   "main": "index.js",
   "scripts": {
     "docs": "pnpm -r --filter='./apps/**' run dev",
