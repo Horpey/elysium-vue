@@ -5,7 +5,6 @@
     "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
     "module": "ESNext",
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "paths": {
       "~/*": ["src/*"]
@@ -14,19 +13,14 @@
     "types": [
       "vite/client",
       "unplugin-vue-macros/macros-global",
-      "unplugin-icons/types/vue3"
+      "unplugin-icons/types/vue3",
     ],
-    "allowImportingTsExtensions": true,
-    /* Bundler mode */
     "allowJs": true,
     "strict": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
-    "declaration": true,
-    "outDir": "dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
     "skipLibCheck": true
   },
   "exclude": ["dist", "node_modules", "eslint.config.js"]

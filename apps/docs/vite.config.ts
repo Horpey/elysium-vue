@@ -61,28 +61,6 @@ export default defineConfig({
     }),
   ],
 
-  // build: {
-  //   lib: {
-  //     // src/indext.ts is where we have exported the component(s)
-  //     entry: resolve(__dirname, 'src/index.ts'),
-  //     name: '@horpey/elysium-vue',
-  //     // the name of the output files when the build is run
-  //     fileName: format => `horpey-elysium-vue.${format}.js`,
-  //   },
-  //   rollupOptions: {
-  //     // make sure to externalize deps that shouldn't be bundled
-  //     // into your library
-  //     external: ['vue'],
-  //     output: {
-  //       // Provide global variables to use in the UMD build
-  //       // for externalized deps
-  //       globals: {
-  //         vue: 'Vue',
-  //       },
-  //     },
-  //   },
-  // },
-
   // https://github.com/vitest-dev/vitest
   test: {
     environment: 'jsdom',
