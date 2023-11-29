@@ -13,7 +13,7 @@ useMeta({
 <template>
   <ElyDocLayout>
     <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
-      Componentsp
+      Components
     </div>
     <h1 class="font-headline text-5xl text-gray-900">
       Button
