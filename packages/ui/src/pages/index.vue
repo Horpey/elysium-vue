@@ -4,24 +4,36 @@ import PhSparkleIcon from 'virtual:icons/ph/sparkle-duotone'
 
 <template>
   <div
-    class="mx-auto h-full max-w-7xl items-center justify-between gap-3 px-4 pt-16 sm:px-6 lg:px-8 border my-20 p-20 flex flex-col space-y-4">
-    <div class="flex space-x-2 items-start">
-      <ElyButton href="https://google.com" target="_blank" theme="SECONDARY" :right-icon="PhSparkleIcon">Button
+    class="mx-auto my-20 flex h-full max-w-7xl flex-col items-center justify-between gap-3 space-y-4 border p-20 px-4 pt-16 sm:px-6 lg:px-8"
+  >
+    <div class="flex items-start space-x-2">
+      <ElyButton href="https://google.com" target="_blank" theme="SECONDARY" :right-icon="PhSparkleIcon">
+        Button
       </ElyButton>
 
-      <ElyButton to="/getting-started/installation" theme="SECONDARY">Button</ElyButton>
-
-      <ElyButton theme="SECONDARY" :right-icon="PhSparkleIcon">Button</ElyButton>
-
-      <ElyButton theme="SECONDARY" size="SMALL">Button</ElyButton>
-
-      <ElyButton theme="SECONDARY" size="SMALL" :loading="true">Button</ElyButton>
-
-      <ElyButton theme="SECONDARY" size="SMALL" :right-icon="PhSparkleIcon" :left-icon="PhSparkleIcon">Button</ElyButton>
-
-      <ElyButton theme="SECONDARY" size="LARGE" :right-icon="PhSparkleIcon" :left-icon="PhSparkleIcon" disabled>Button
+      <ElyButton to="/getting-started/installation" theme="SECONDARY">
+        Button
       </ElyButton>
 
+      <ElyButton theme="SECONDARY" :right-icon="PhSparkleIcon">
+        Button
+      </ElyButton>
+
+      <ElyButton theme="SECONDARY" size="SMALL">
+        Button
+      </ElyButton>
+
+      <ElyButton theme="SECONDARY" size="SMALL" :loading="true">
+        Button
+      </ElyButton>
+
+      <ElyButton theme="SECONDARY" size="SMALL" :right-icon="PhSparkleIcon" :left-icon="PhSparkleIcon">
+        Button
+      </ElyButton>
+
+      <ElyButton theme="SECONDARY" size="LARGE" :right-icon="PhSparkleIcon" :left-icon="PhSparkleIcon" disabled>
+        Button
+      </ElyButton>
     </div>
 
     <ElyLoader size="LARGE" />
@@ -33,12 +45,27 @@ import PhSparkleIcon from 'virtual:icons/ph/sparkle-duotone'
 
       <ElyAlert title="Success!" message="You've successfully integrated Elysium Vue into your Vue 3 application!" />
 
-      <ElyAlert title="Success!" message="You've successfully integrated Elysium Vue into your Vue 3 application!"
-        :icon="PhSparkleIcon" />
+      <ElyAlert
+        title="Success!" message="You've successfully integrated Elysium Vue into your Vue 3 application!"
+        :icon="PhSparkleIcon"
+      />
     </div>
 
-    <div>
-      <ElyAvatar />
+    <div class="flex">
+      <ElyAvatar src="" alt="John Doe" />
+
+      <ElyAvatar src="" alt="John Doe" size="SMALL" />
+
+      <ElyAvatar src="" alt="John Doe" :chip="true" />
+
+      <ElyAvatar
+        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="avatar"
+      />
+
+      <ElyAvatar
+        size="LARGE"
+        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="avatar"
+      />
     </div>
   </div>
 </template>
