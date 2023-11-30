@@ -39,7 +39,6 @@ const classes = computed(() => {
 
   return `${sizeClass} ${themeClass}`
 })
-
 </script>
 
 <template>
