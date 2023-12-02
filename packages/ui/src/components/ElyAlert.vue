@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { FunctionalComponent } from 'vue';
-import { ElyAlertThemeKey } from '~/types/ElyAlert';
+import type { FunctionalComponent } from 'vue'
+import type { ElyAlertThemeKey } from '~/types/ElyAlert'
 
 interface Props {
   title?: string
@@ -35,7 +35,6 @@ const classes = computed(() => {
 
   return themeClass
 })
-
 </script>
 
 <template>
@@ -44,7 +43,7 @@ const classes = computed(() => {
       <component :is="icon" class="h-4 w-4" />
 
       <div class="flex flex-col space-y-1">
-        <span class="font-bold" v-if="title">
+        <span v-if="title" class="font-bold">
           {{ title }}
         </span>
 

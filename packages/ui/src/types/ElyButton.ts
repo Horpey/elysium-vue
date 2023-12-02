@@ -8,9 +8,9 @@ export const ELY_BUTTON_THEME = {
 export type ElyButtonThemeKey = keyof typeof ELY_BUTTON_THEME
 
 export const ELY_BUTTON_SIZE = {
-  LARGE: 'ely-control-size-large',
-  MEDIUM: 'ely-control-size-default',
-  SMALL: 'ely-control-size-small',
+  LARGE: 'large',
+  MEDIUM: 'medium',
+  SMALL: 'small',
 } as const
 
 export type ElyButtonSizeKey = keyof typeof ELY_BUTTON_SIZE
