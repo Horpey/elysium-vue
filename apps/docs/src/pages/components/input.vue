@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ElyInput } from '@horpey/elysium-vue'
 import { useMeta } from '~/composables/useMeta'
+import PhSparkleDuotoneIcon from 'virtual:icons/ph/sparkle-duotone'
 
 const value = ref('')
 useMeta({
@@ -29,6 +30,37 @@ useMeta({
         <div class="flex space-x-4">
           <ElyInput v-model="value" />
         </div>
+
+        <p class="font-mono text-xs uppercase tracking-wider">
+          Sizes
+        </p>
+        <div class="flex space-y-4 flex-col max-w-md">
+          <ElyInput v-model="value" size="SMALL" placeholder="Search"/>
+          <ElyInput v-model="value" size="MEDIUM" placeholder="Search"/>
+          <ElyInput v-model="value" size="LARGE" placeholder="Search"/>
+        </div>
+
+        <p class="font-mono text-xs uppercase tracking-wider">
+         Disabled
+        </p>
+        <div class="flex space-x-4">
+          <ElyInput v-model="value" placeholder="Search" disabled/>
+        </div>
+
+        <p class="font-mono text-xs uppercase tracking-wider">
+         Icon
+        </p>
+        <div class="flex space-x-4">
+          <ElyInput v-model="value" placeholder="Search" input-class="w-full" :icon="PhSparkleDuotoneIcon" size="LARGE"/>
+        </div>
+
+        <p class="font-mono text-xs uppercase tracking-wider">
+         Loading
+        </p>
+        <div class="flex space-x-4">
+          <ElyInput v-model="value" placeholder="Search" size="LARGE" loading/>
+        </div>
+
       </div>
     </div>
   </ElyDocLayout>

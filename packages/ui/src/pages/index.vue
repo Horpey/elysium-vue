@@ -78,7 +78,7 @@ const value = ref('')
 
       <div class="my-2">
         <span class="mr-2">{{ value }}</span>
-        <ElyInput v-model="value" :icon="PhSparkleIcon" placeholder="Search..." />
+        <ElyInput v-model="value" :icon="PhSparkleIcon" placeholder="Search..." size="LARGE" loading />
       </div>
     </div>
   </div>
