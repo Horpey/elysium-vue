@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { ElyLoader } from '@horpey/elysium-vue'
+import { ElyInput } from '@horpey/elysium-vue'
 import { useMeta } from '~/composables/useMeta'
 
+const value = ref('')
 useMeta({
-  title: 'Loader',
+  title: 'Input',
 })
 </script>
 
@@ -23,10 +24,10 @@ useMeta({
 
       <div class="my-10 flex flex-col space-y-4">
         <p class="font-mono text-xs uppercase tracking-wider">
-          Sizes
+          V-model <span v-if="value" class="text-gray-500">- {{ value }}</span>
         </p>
         <div class="flex space-x-4">
-          <ElyLoader size="SMALL" />
+          <ElyInput v-model="value" />
         </div>
       </div>
     </div>

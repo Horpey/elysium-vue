@@ -3,6 +3,7 @@ import ElyButton from './components/ElyButton.vue'
 import ElyLoader from './components/ElyLoader.vue'
 import ElyTerminal from './components/ElyTerminal.vue'
 import ElyAvatar from './components/ElyAvatar.vue'
+import ElyInput from './components/ElyInput.vue'
 
 export {
   ElyAlert,
@@ -10,4 +11,5 @@ export {
   ElyButton,
   ElyLoader,
   ElyTerminal,
+  ElyInput,
 }
