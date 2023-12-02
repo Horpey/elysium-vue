@@ -36,6 +36,10 @@ const items = ref([
         title: 'Loader',
         link: '/components/loader',
       },
+      {
+        title: 'Input',
+        link: '/components/input',
+      },
     ],
   },
 ])
@@ -45,7 +49,7 @@ const items = ref([
   <aside class="sticky overflow-y-auto">
     <nav>
       <div v-for="(item, index) in items" :key="index" class="mb-6">
-        <h5 class="mb-3 font-headline text-2xl text-koromiko-700">
+        <h5 class="font-headline text-koromiko-700 mb-3 text-2xl">
           {{ item.title }}
         </h5>
 

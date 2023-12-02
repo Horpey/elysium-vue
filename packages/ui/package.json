@@ -8,6 +8,7 @@
   "repository": "horpey/elysium-vue",
   "exports": {
     ".": {
+      "types": "./dist/src/index.d.ts",
       "import": "./dist/horpey-elysium-vue.es.js",
       "require": "./dist/horpey-elysium-vue.umd.js"
     }
