@@ -33,7 +33,7 @@ const props = withDefaults(defineProps<Props>(), {
 const isDisabled = computed(() => props.disabled || props.loading)
 
 const buttonClass = computed(() => {
-  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 clip-btn'
+  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 clip-path-btn'
 
   let themeClass = ''
   let sizeClass = ''
@@ -174,9 +174,3 @@ const buttonClass = computed(() => {
     </span>
   </button>
 </template>
-
-<style scoped lang="scss">
-.clip-btn {
-  clip-path: polygon(calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px), 0 0);
-}
-</style>

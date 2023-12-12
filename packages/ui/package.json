@@ -10,6 +10,10 @@
     ".": {
       "import": "./src/index.ts",
       "require": "./src/index.ts"
+    },
+    "./index.css": {
+      "import": "./src/styles/index.css",
+      "require": "./src/styles/index.css"
     }
   },
   "main": "./src/index.ts",
@@ -26,7 +30,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@unhead/vue": "^1.8.8",
+    "@unhead/vue": "1.8.8",
     "@vueuse/core": "10.6.1",
     "vue": "3.3.8",
     "vue-router": "4.2.5"
@@ -34,7 +38,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "2.0.0",
     "@iconify-json/carbon": "1.1.21",
-    "@iconify-json/ph": "^1.1.7",
+    "@iconify-json/ph": "1.1.7",
     "@types/node": "20.9.2",
     "@vitejs/plugin-vue": "4.5.0",
     "@vue-macros/volar": "0.17.3",
@@ -45,12 +49,12 @@
     "jsdom": "22.1.0",
     "pnpm": "8.10.5",
     "postcss": "8.4.31",
-    "sass": "^1.69.5",
+    "sass": "1.69.5",
     "simple-git-hooks": "2.9.0",
     "tailwindcss": "3.3.5",
     "typescript": "5.3.2",
     "unplugin-auto-import": "0.16.7",
-    "unplugin-icons": "^0.17.4",
+    "unplugin-icons": "0.17.4",
     "unplugin-vue-components": "0.25.2",
     "unplugin-vue-macros": "2.7.0",
     "unplugin-vue-router": "0.7.0",
