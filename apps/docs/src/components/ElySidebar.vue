@@ -40,6 +40,10 @@ const items = ref([
         title: 'Input',
         link: '/components/input',
       },
+      {
+        title: 'Textarea',
+        link: '/components/textarea',
+      },
     ],
   },
 ])

@@ -13,6 +13,7 @@ declare module 'vue' {
     ElyInput: typeof import('./src/components/ElyInput.vue')['default']
     ElyLoader: typeof import('./src/components/ElyLoader.vue')['default']
     ElyTerminal: typeof import('./src/components/ElyTerminal.vue')['default']
+    ElyTextarea: typeof import('./src/components/ElyTextarea.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
