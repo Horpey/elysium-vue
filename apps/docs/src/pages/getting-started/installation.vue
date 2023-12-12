@@ -12,7 +12,7 @@ useMeta({
     <div class="mb-4 flex items-center gap-1.5 text-sm font-semibold text-koromiko-700">
       Getting Started
     </div>
-    <h1 class="font-headline text-5xl text-gray-900">
+    <h1 class="text-5xl font-bold uppercase tracking-wider text-gray-900">
       Installation
     </h1>
 

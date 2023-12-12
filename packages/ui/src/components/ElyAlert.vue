@@ -41,7 +41,7 @@ const classes = computed(() => {
       <component :is="icon" class="h-4 w-4" />
 
       <div class="flex flex-col space-y-1">
-        <span v-if="title" class="font-bold">
+        <span v-if="title" class="text-xs font-bold uppercase tracking-wider">
           {{ title }}
         </span>
 

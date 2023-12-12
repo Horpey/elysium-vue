@@ -43,7 +43,7 @@ const emit = defineEmits(['update:modelValue'])
 const input = ref<HTMLInputElement | null>(null)
 
 const classes = computed(() => {
-  const baseClass = 'border border-koromiko-600 shadow-sm focus:ring-1 focus:ring-koromiko-700 focus:border-koromiko-700 outline-none transition-all duration-200 ease-in-out w-full disabled:cursor-not-allowed disabled:opacity-75'
+  const baseClass = 'border border-koromiko-600 shadow-sm focus:ring-1 focus:ring-koromiko-700 focus:border-koromiko-700 outline-none transition-all duration-200 ease-in-out w-full disabled:cursor-not-allowed disabled:bg-koromiko-800/10 disabled:text-koromiko-900'
 
   let classString = baseClass
   let sizeClass = ''

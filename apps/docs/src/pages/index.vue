@@ -26,7 +26,7 @@ useMeta({
         </div>
 
         <div class="text-center">
-          <h1 class="font-headline text-7xl font-bold text-white">
+          <h1 class="text-7xl font-bold text-white">
             Where Vue Meets the Future of <br><span class="text-aquamarine-primary">Sci-Fi Web</span> Components
           </h1>
           <p class="mt-3 text-sm text-white">

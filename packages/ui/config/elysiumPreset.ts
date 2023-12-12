@@ -77,9 +77,8 @@ export default {
       },
     },
     fontFamily: {
-      headline: ['Bebas Neue', ...defaultTheme.fontFamily.serif],
-      sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
-      mono: ['IBM Plex Mono', ...defaultTheme.fontFamily.mono],
+      sans: ['Chakra Petch', ...defaultTheme.fontFamily.sans],
+      mono: ['Chakra Petch', ...defaultTheme.fontFamily.mono],
     },
   },
 } satisfies Config
