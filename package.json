@@ -5,6 +5,10 @@
   "private": true,
   "packageManager": "pnpm@8.10.5",
   "description": "Scifi UI Framework for Vue.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "author": "",
   "license": "ISC",
   "keywords": [
