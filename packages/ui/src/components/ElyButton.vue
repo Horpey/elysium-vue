@@ -33,35 +33,35 @@ const props = withDefaults(defineProps<Props>(), {
 const isDisabled = computed(() => props.disabled || props.loading)
 
 const buttonClass = computed(() => {
-  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 clip-path-btn'
+  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50'
 
   let themeClass = ''
   let sizeClass = ''
 
   switch (props.theme) {
     case 'PRIMARY':
-      themeClass = 'border-transparent bg-koromiko-700 text-white focus:ring-koromiko-600'
+      themeClass = 'border-transparent bg-koromiko-700 text-white focus:ring-koromiko-600 hover:bg-koromiko-600 hover:text-white'
       break
     case 'SECONDARY':
-      themeClass = 'border-transparent bg-aquamarine-700 text-white focus:ring-aquamarine-600'
+      themeClass = 'border-transparent bg-aquamarine-700 text-white focus:ring-aquamarine-600 hover:bg-aquamarine-600 hover:text-white'
       break
     case 'TERTIARY':
-      themeClass = 'border-transparent bg-codgray-300 text-white focus:ring-codgray-200'
+      themeClass = 'border-transparent bg-codgray-300 text-white focus:ring-codgray-200 hover:bg-codgray-50 hover:text-white'
       break
     case 'DESTRUCTIVE':
-      themeClass = 'border-transparent bg-rose-700 text-white focus:ring-rose-600'
+      themeClass = 'border-transparent bg-rose-700 text-white focus:ring-rose-600 hover:bg-rose-600 hover:text-white'
       break
   }
 
   switch (props.size) {
     case 'SMALL':
-      sizeClass = 'text-sm px-5 py-3'
+      sizeClass = 'text-xs px-3 py-1 h-8'
       break
     case 'MEDIUM':
-      sizeClass = 'text-base px-7 py-4'
+      sizeClass = 'text-sm px-4 py-2'
       break
     case 'LARGE':
-      sizeClass = 'text-lg px-9 py-5'
+      sizeClass = 'text-base px-6 py-3'
       break
   }
 

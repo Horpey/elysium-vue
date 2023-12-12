@@ -14,6 +14,10 @@
     "./index.css": {
       "import": "./src/styles/index.css",
       "require": "./src/styles/index.css"
+    },
+    "./elysiumPreset": {
+      "import": "./config/elysiumPreset.ts",
+      "require": "./config/elysiumPreset.ts"
     }
   },
   "main": "./src/index.ts",

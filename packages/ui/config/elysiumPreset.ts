@@ -21,6 +21,7 @@ export default {
           900: '#141414',
           950: '#0f0f0f',
           primary: '#1d1d1d',
+          light: '#e7e7e7',
         },
         ectasy: {
           50: '#FFF8F4',
@@ -49,6 +50,7 @@ export default {
           900: '#4A3618',
           950: '#1E180A',
           primary: '#FFB653',
+          light: '#f1ede9',
         },
         aquamarine: {
           50: '#F3F9FA',
@@ -63,6 +65,10 @@ export default {
           900: '#1A2E30',
           950: '#0B1618',
           primary: '#77FCFF',
+          light: '#e9eded',
+        },
+        rose: {
+          light: '#f6e8eb',
         },
       },
       boxShadow: {

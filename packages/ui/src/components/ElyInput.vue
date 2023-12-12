@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { FunctionalComponent, InputHTMLAttributes } from 'vue'
+import ElyLoader from '../components/ElyLoader.vue'
 import type { ElyInputSizeKey } from '~/types/ElyInput'
 
 interface Props extends /* @vue-ignore */ InputHTMLAttributes {
