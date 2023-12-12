@@ -12,7 +12,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@horpey/elysium-vue": "workspace:latest",
+    "@horpey/elysium-vue": "workspace:*",
     "@unhead/vue": "^1.8.8",
     "@vueuse/core": "10.6.1",
     "vue": "3.3.8",

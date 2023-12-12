@@ -21,7 +21,7 @@ importers:
   apps/docs:
     dependencies:
       '@horpey/elysium-vue':
-        specifier: workspace:latest
+        specifier: workspace:*
         version: link:../../packages/ui
       '@unhead/vue':
         specifier: ^1.8.8
