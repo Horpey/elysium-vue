@@ -68,7 +68,6 @@ export default {
       boxShadow: {
         'bottom': '0px 6px #ffffff24',
         'bottom-dark': '1px 6px #00000024',
-        'btn': 'inset 0px -1px 1px 1px #ffffff63',
       },
     },
     fontFamily: {

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ButtonHTMLAttributes, FunctionalComponent } from 'vue'
 import { RouterLink } from 'vue-router'
+import ElyLoader from './ElyLoader.vue'
 import type { ElyButtonSizeKey, ElyButtonThemeKey } from '~/types/ElyButton'
 
 interface Props extends /* @vue-ignore */ ButtonHTMLAttributes {
@@ -32,7 +33,7 @@ const props = withDefaults(defineProps<Props>(), {
 const isDisabled = computed(() => props.disabled || props.loading)
 
 const buttonClass = computed(() => {
-  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 shadow-btn'
+  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 clip-btn'
 
   let themeClass = ''
   let sizeClass = ''
@@ -54,13 +55,13 @@ const buttonClass = computed(() => {
 
   switch (props.size) {
     case 'SMALL':
-      sizeClass = 'text-xs px-3 py-1 h-8'
+      sizeClass = 'text-sm px-5 py-3'
       break
     case 'MEDIUM':
-      sizeClass = 'text-sm px-4 py-2'
+      sizeClass = 'text-base px-7 py-4'
       break
     case 'LARGE':
-      sizeClass = 'text-base px-6 py-3'
+      sizeClass = 'text-lg px-9 py-5'
       break
   }
 
@@ -173,3 +174,9 @@ const buttonClass = computed(() => {
     </span>
   </button>
 </template>
+
+<style scoped lang="scss">
+.clip-btn {
+  clip-path: polygon(calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px), 0 0);
+}
+</style>

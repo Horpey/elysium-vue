@@ -10,7 +10,7 @@ useMeta({
 
 <template>
   <ElyDocLayout>
-    <div class="mb-4 flex items-center gap-1.5 text-sm font-semibold text-koromiko-700">
+    <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
       Components
     </div>
     <h1 class="font-headline text-5xl text-gray-900">
@@ -32,38 +32,49 @@ useMeta({
         <p class="font-mono text-xs uppercase tracking-wider">
           Description
         </p>
-        <ElyAlert title="Success!" message="You've successfully integrated Elysium Vue into your Vue 3 application!" />
+        <ElyAlert title="Success!">
+          <p>You've successfully integrated Elysium Vue into your<span class="font-bold"> Vue 3 application!</span></p>
+        </ElyAlert>
 
         <p class="font-mono text-xs uppercase tracking-wider">
           Icon
         </p>
         <ElyAlert
-          title="Success!" message="You've successfully integrated Elysium Vue into your Vue 3 application!"
+          title="Success!"
           :icon="PhSparkleDuotoneIcon"
-        />
+        >
+          <p>You've successfully integrated Elysium Vue into your<span class="font-bold"> Vue 3 application!</span></p>
+        </ElyAlert>
 
         <p class="font-mono text-xs uppercase tracking-wider">
           Theme
         </p>
         <ElyAlert
-          message="You've successfully integrated Elysium Vue into your Vue 3 application!"
           :icon="PhSparkleDuotoneIcon"
-        />
+        >
+          <p>You've successfully integrated Elysium Vue into your<span class="font-bold"> Vue 3 application!</span></p>
+        </ElyAlert>
 
         <ElyAlert
-          theme="SECONDARY" message="You've successfully integrated Elysium Vue into your Vue 3 application!"
+          theme="SECONDARY"
           :icon="PhSparkleDuotoneIcon"
-        />
+        >
+          <p>You've successfully integrated Elysium Vue into your<span class="font-bold"> Vue 3 application!</span></p>
+        </ElyAlert>
 
         <ElyAlert
-          theme="TERTIARY" message="You've successfully integrated Elysium Vue into your Vue 3 application!"
+          theme="TERTIARY"
           :icon="PhSparkleDuotoneIcon"
-        />
+        >
+          <p>You've successfully integrated Elysium Vue into your<span class="font-bold"> Vue 3 application!</span></p>
+        </ElyAlert>
 
         <ElyAlert
-          theme="DESTRUCTIVE" message="You've successfully integrated Elysium Vue into your Vue 3 application!"
+          theme="DESTRUCTIVE"
           :icon="PhSparkleDuotoneIcon"
-        />
+        >
+          <p>You've successfully integrated Elysium Vue into your<span class="font-bold"> Vue 3 application!</span></p>
+        </ElyAlert>
       </div>
     </div>
   </ElyDocLayout>
