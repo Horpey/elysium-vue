@@ -34,7 +34,7 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <span class="border-koromiko-700 bg-koromiko-800/10 text-koromiko-700 ring-koromiko-700 relative m-2 inline-flex items-center justify-center ring-1 ring-offset-2" :class="classes">
+  <span class="relative m-2 inline-flex items-center justify-center border-koromiko-700 bg-koromiko-800/10 text-koromiko-700 ring-1 ring-koromiko-700 ring-offset-2" :class="classes">
     <img
       v-if="src"
       :src="src"
