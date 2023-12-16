@@ -2,11 +2,12 @@
 import PhSparkleIcon from 'virtual:icons/ph/sparkle-duotone'
 
 const value = ref('')
+const textareaValue = ref('')
 </script>
 
 <template>
   <div
-    class="mx-auto my-20 flex h-full max-w-7xl flex-col items-center justify-between gap-3 space-y-4 border p-20 px-4 pt-16 sm:px-6 lg:px-8"
+    class="mx-auto my-20 flex h-full max-w-7xl flex-col justify-between gap-3 space-y-4 border p-20 px-4 pt-16 sm:px-6 lg:px-8"
   >
     <div class="flex items-start space-x-2">
       <ElyButton href="https://google.com" target="_blank" theme="SECONDARY" :right-icon="PhSparkleIcon">
@@ -79,6 +80,15 @@ const value = ref('')
       <div class="my-2">
         <span class="mr-2">{{ value }}</span>
         <ElyInput v-model="value" :icon="PhSparkleIcon" placeholder="Search..." size="LARGE" loading />
+      </div>
+    </div>
+
+    <div>
+      <div class="my-2">
+        <ElyTextarea v-model="textareaValue" size="SMALL" :rows="1" placeholder="Search..." />
+        <ElyTextarea v-model="textareaValue" size="SMALL" placeholder="Search.dsfsf.." :autoresize="false" />
+
+        <span class="mr-2">{{ textareaValue }}</span>
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import elysiumPreset from './config/elysiumPreset'
+import elysiumPreset from '@horpey/elysium-vue/elysiumPreset'
 
 export default {
   content: [

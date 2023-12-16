@@ -4,14 +4,12 @@ import type { ElyAlertThemeKey } from '~/types/ElyAlert'
 
 interface Props {
   title?: string
-  message?: string
   icon?: FunctionalComponent
   theme?: ElyAlertThemeKey
 }
 
 const props = withDefaults(defineProps<Props>(), {
   title: undefined,
-  message: undefined,
   theme: 'PRIMARY',
 })
 
@@ -38,17 +36,17 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <div class="border border-l-8 px-3 py-2" :class="classes">
+  <div class="clip-top-right relative border border-l-8 px-3 py-2" :class="classes">
     <span class="flex space-x-3 font-mono text-xs">
       <component :is="icon" class="h-4 w-4" />
 
       <div class="flex flex-col space-y-1">
-        <span v-if="title" class="font-bold">
+        <span v-if="title" class="text-xs font-bold uppercase tracking-wider">
           {{ title }}
         </span>
 
-        <span v-if="message">
-          {{ message }}
+        <span v-if="$slots">
+          <slot />
         </span>
       </div>
     </span>

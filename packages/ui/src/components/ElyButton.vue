@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ButtonHTMLAttributes, FunctionalComponent } from 'vue'
 import { RouterLink } from 'vue-router'
+import ElyLoader from './ElyLoader.vue'
 import type { ElyButtonSizeKey, ElyButtonThemeKey } from '~/types/ElyButton'
 
 interface Props extends /* @vue-ignore */ ButtonHTMLAttributes {
@@ -32,23 +33,23 @@ const props = withDefaults(defineProps<Props>(), {
 const isDisabled = computed(() => props.disabled || props.loading)
 
 const buttonClass = computed(() => {
-  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 shadow-btn'
+  const baseClass = 'border font-light uppercase tracking-wider transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50'
 
   let themeClass = ''
   let sizeClass = ''
 
   switch (props.theme) {
     case 'PRIMARY':
-      themeClass = 'border-transparent bg-koromiko-700 text-white focus:ring-koromiko-600'
+      themeClass = 'border-transparent bg-koromiko-700 text-white focus:ring-koromiko-600 hover:bg-koromiko-600 hover:text-white'
       break
     case 'SECONDARY':
-      themeClass = 'border-transparent bg-aquamarine-700 text-white focus:ring-aquamarine-600'
+      themeClass = 'border-transparent bg-aquamarine-700 text-white focus:ring-aquamarine-600 hover:bg-aquamarine-600 hover:text-white'
       break
     case 'TERTIARY':
-      themeClass = 'border-transparent bg-codgray-300 text-white focus:ring-codgray-200'
+      themeClass = 'border-transparent bg-codgray-300 text-white focus:ring-codgray-200 hover:bg-codgray-50 hover:text-white'
       break
     case 'DESTRUCTIVE':
-      themeClass = 'border-transparent bg-rose-700 text-white focus:ring-rose-600'
+      themeClass = 'border-transparent bg-rose-700 text-white focus:ring-rose-600 hover:bg-rose-600 hover:text-white'
       break
   }
 

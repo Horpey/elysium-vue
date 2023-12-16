@@ -21,6 +21,7 @@ export default {
           900: '#141414',
           950: '#0f0f0f',
           primary: '#1d1d1d',
+          light: '#e7e7e7',
         },
         ectasy: {
           50: '#FFF8F4',
@@ -49,6 +50,7 @@ export default {
           900: '#4A3618',
           950: '#1E180A',
           primary: '#FFB653',
+          light: '#f1ede9',
         },
         aquamarine: {
           50: '#F3F9FA',
@@ -63,18 +65,20 @@ export default {
           900: '#1A2E30',
           950: '#0B1618',
           primary: '#77FCFF',
+          light: '#e9eded',
+        },
+        rose: {
+          light: '#f6e8eb',
         },
       },
       boxShadow: {
         'bottom': '0px 6px #ffffff24',
         'bottom-dark': '1px 6px #00000024',
-        'btn': 'inset 0px -1px 1px 1px #ffffff63',
       },
     },
     fontFamily: {
-      headline: ['Bebas Neue', ...defaultTheme.fontFamily.serif],
-      sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
-      mono: ['IBM Plex Mono', ...defaultTheme.fontFamily.mono],
+      sans: ['Chakra Petch', ...defaultTheme.fontFamily.sans],
+      mono: ['Chakra Petch', ...defaultTheme.fontFamily.mono],
     },
   },
 } satisfies Config

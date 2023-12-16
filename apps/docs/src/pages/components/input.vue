@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ElyInput } from '@horpey/elysium-vue'
-import { useMeta } from '~/composables/useMeta'
 import PhSparkleDuotoneIcon from 'virtual:icons/ph/sparkle-duotone'
+import { useMeta } from '~/composables/useMeta'
 
 const value = ref('')
 useMeta({
@@ -14,7 +14,7 @@ useMeta({
     <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
       Components
     </div>
-    <h1 class="font-headline text-5xl text-gray-900">
+    <h1 class="text-5xl font-bold uppercase tracking-wider text-gray-900">
       Input
     </h1>
 
@@ -27,40 +27,41 @@ useMeta({
         <p class="font-mono text-xs uppercase tracking-wider">
           V-model <span v-if="value" class="text-gray-500">- {{ value }}</span>
         </p>
-        <div class="flex space-x-4">
+        <div class="flex max-w-md flex-col">
           <ElyInput v-model="value" />
         </div>
 
         <p class="font-mono text-xs uppercase tracking-wider">
           Sizes
         </p>
-        <div class="flex space-y-4 flex-col max-w-md">
-          <ElyInput v-model="value" size="SMALL" placeholder="Search"/>
-          <ElyInput v-model="value" size="MEDIUM" placeholder="Search"/>
-          <ElyInput v-model="value" size="LARGE" placeholder="Search"/>
+        <div class="flex max-w-md flex-col space-y-4">
+          <ElyInput v-model="value" size="SMALL" placeholder="Search" />
+          <ElyInput v-model="value" size="MEDIUM" placeholder="Search" />
+          <ElyInput v-model="value" size="LARGE" placeholder="Search" />
         </div>
 
         <p class="font-mono text-xs uppercase tracking-wider">
-         Disabled
+          Disabled
         </p>
-        <div class="flex space-x-4">
-          <ElyInput v-model="value" placeholder="Search" disabled/>
+        <div class="flex max-w-md flex-col">
+          <ElyInput size="MEDIUM" placeholder="Search" disabled />
         </div>
 
         <p class="font-mono text-xs uppercase tracking-wider">
-         Icon
+          Icon
         </p>
-        <div class="flex space-x-4">
-          <ElyInput v-model="value" placeholder="Search" input-class="w-full" :icon="PhSparkleDuotoneIcon" size="LARGE"/>
+        <div class="flex max-w-md flex-col">
+          <ElyInput size="MEDIUM" placeholder="Search" :icon="PhSparkleDuotoneIcon" />
         </div>
 
         <p class="font-mono text-xs uppercase tracking-wider">
-         Loading
+          Loading
         </p>
-        <div class="flex space-x-4">
-          <ElyInput v-model="value" placeholder="Search" size="LARGE" loading/>
+        <div class="flex max-w-md">
+          <div class="w-full space-x-4">
+            <ElyInput v-model="value" placeholder="Search" size="LARGE" loading />
+          </div>
         </div>
-
       </div>
     </div>
   </ElyDocLayout>

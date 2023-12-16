@@ -4,6 +4,7 @@ import ElyLoader from './components/ElyLoader.vue'
 import ElyTerminal from './components/ElyTerminal.vue'
 import ElyAvatar from './components/ElyAvatar.vue'
 import ElyInput from './components/ElyInput.vue'
+import ElyTextarea from './components/ElyTextarea.vue'
 
 export {
   ElyAlert,
@@ -12,4 +13,5 @@ export {
   ElyLoader,
   ElyTerminal,
   ElyInput,
+  ElyTextarea,
 }
