@@ -12,7 +12,7 @@ interface Props extends /* @vue-ignore */ TextareaHTMLAttributes {
   inputId?: string
   rows?: number
   size?: ElyInputSizeKey
-  autoresize?: boolean
+  resize?: boolean
   onInput?: (event: Event) => void
   onBlur?: (event: Event) => void
   onChange?: (event: Event) => void
@@ -27,8 +27,8 @@ const props = withDefaults(defineProps<Props>(), {
   inputClass: undefined,
   inputId: undefined,
   rows: 3,
+  resize: true,
   size: 'MEDIUM',
-  autoresize: false,
   onInput: () => { },
   onBlur: () => { },
   onChange: () => { },
@@ -63,6 +63,10 @@ const classes = computed(() => {
   if (sizeClass)
     classString += ` ${sizeClass}`
 
+  if (props.resize)
+    classString += ' resize'
+  else classString += ' resize-none'
+
   return classString
 })
 
@@ -89,7 +93,6 @@ function onChange(event: Event) {
       :rows="rows"
       :required="required"
       :disabled="disabled"
-      :autoresize="autoresize"
       :placeholder="placeholder"
       v-bind="$attrs"
       :class="classes"
