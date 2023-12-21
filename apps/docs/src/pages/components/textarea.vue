@@ -41,7 +41,7 @@ useMeta({
           Rows
         </p>
         <div class="flex max-w-md flex-col">
-          <ElyTextarea placeholder="Search..." :rows="5" />
+          <ElyTextarea placeholder="Search..." :rows="5" :resize="false" />
         </div>
       </div>
     </div>
