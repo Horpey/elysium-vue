@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import elysiumPreset from '@horpey/elysium-vue/elysiumPreset'
+import tailwindForms from '@tailwindcss/forms'
 
 export default {
   content: [
@@ -9,5 +10,8 @@ export default {
   ],
   presets: [
     elysiumPreset,
+  ],
+  plugins: [
+    tailwindForms,
   ],
 } satisfies Config

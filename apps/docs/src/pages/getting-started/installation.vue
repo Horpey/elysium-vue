@@ -17,9 +17,9 @@ useMeta({
     </h1>
 
     <div class="my-4">
-      <p class="text-sm leading-relaxed">
-        Getting started with Elysium is quick and easy. Follow these simple steps to integrate the futuristic Vue 3 sci-fi UI Kit into your project.
-      </p>
+              <p class="text-sm leading-relaxed">
+                Getting started with Elysium is quick and easy. Follow these simple steps to integrate the futuristic Vue 3 sci-fi UI Kit into your project.
+              </p>
 
       <h2 class="my-6 text-2xl font-semibold">
         Prerequisites

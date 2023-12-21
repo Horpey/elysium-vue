@@ -46,6 +46,8 @@ declare module 'vue-router/auto/routes' {
     '/components/checkbox': RouteRecordInfo<'/components/checkbox', '/components/checkbox', Record<never, never>, Record<never, never>>,
     '/components/input': RouteRecordInfo<'/components/input', '/components/input', Record<never, never>, Record<never, never>>,
     '/components/loader': RouteRecordInfo<'/components/loader', '/components/loader', Record<never, never>, Record<never, never>>,
+    '/components/radio': RouteRecordInfo<'/components/radio', '/components/radio', Record<never, never>, Record<never, never>>,
+    '/components/switch': RouteRecordInfo<'/components/switch', '/components/switch', Record<never, never>, Record<never, never>>,
     '/components/textarea': RouteRecordInfo<'/components/textarea', '/components/textarea', Record<never, never>, Record<never, never>>,
     '/getting-started/': RouteRecordInfo<'/getting-started/', '/getting-started', Record<never, never>, Record<never, never>>,
     '/getting-started/installation': RouteRecordInfo<'/getting-started/installation', '/getting-started/installation', Record<never, never>, Record<never, never>>,

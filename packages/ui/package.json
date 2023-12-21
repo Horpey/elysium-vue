@@ -34,6 +34,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.16",
     "@unhead/vue": "1.8.8",
     "@vueuse/core": "10.6.1",
     "vue": "3.3.8",

@@ -11,16 +11,16 @@ useMeta({
 <template>
   <ElyLayout>
     <div class="absolute top-0 h-screen w-full overflow-hidden bg-[url('/images/rdne.jpg')] bg-cover bg-center">
-      <div class="bg-koromiko-950/80 h-full w-full" />
+      <div class="h-full w-full bg-koromiko-950/80" />
     </div>
 
     <div class="relative">
       <div class="mx-auto max-w-4xl py-32">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div
-            class="border-koromiko-primary bg-koromiko-900/50 text-koromiko-primary flex items-center space-x-2 border px-3 py-0.5 text-xs leading-6"
+            class="flex items-center space-x-2 border border-koromiko-primary bg-koromiko-900/50 px-3 py-0.5 text-xs leading-6 text-koromiko-primary"
           >
-            <PhSparkleIcon class="text-koromiko-primary h-3 w-3" />
+            <PhSparkleIcon class="h-3 w-3 text-koromiko-primary" />
             <span>Elevate Vue with Futuristic Sci-Fi Web Components.</span>
           </div>
         </div>
@@ -34,9 +34,7 @@ useMeta({
           </p>
 
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <!-- to="/getting-started/installation" theme="SECONDARY" -->
-
-            <ElyButton theme="SECONDARY">
+            <ElyButton theme="SECONDARY" to="/getting-started/installation">
               Get Started
             </ElyButton>
           </div>
