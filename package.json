@@ -43,11 +43,6 @@
 
   },
   "lint-staged": {
-    "*": [
-      "pnpm run lint",
-      "pnpm run lint:apps",
-      "pnpm run typecheck",
-      "git add"
-    ]
+    "*": "eslint --fix"
   }
 }
