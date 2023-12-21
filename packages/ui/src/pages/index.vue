@@ -15,7 +15,7 @@ const checkedValue = ref(false)
         Button
       </ElyButton>
 
-      <ElyButton to="/getting-started/installation" theme="SECONDARY">
+      <ElyButton to="/" theme="SECONDARY">
         Button
       </ElyButton>
 
@@ -95,7 +95,6 @@ const checkedValue = ref(false)
 
     <div>
       <div class="my-2">
-        {{ checkedValue }}
         <ElyCheckbox v-model="checkedValue">
           Checkbox
         </ElyCheckbox>
