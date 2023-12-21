@@ -10,6 +10,7 @@ declare module 'vue' {
     ElyAlert: typeof import('./src/components/ElyAlert.vue')['default']
     ElyAvatar: typeof import('./src/components/ElyAvatar.vue')['default']
     ElyButton: typeof import('./src/components/ElyButton.vue')['default']
+    ElyCheckbox: typeof import('./src/components/ElyCheckbox.vue')['default']
     ElyInput: typeof import('./src/components/ElyInput.vue')['default']
     ElyLoader: typeof import('./src/components/ElyLoader.vue')['default']
     ElyTerminal: typeof import('./src/components/ElyTerminal.vue')['default']

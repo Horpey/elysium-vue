@@ -44,6 +44,10 @@ const items = ref([
         title: 'Textarea',
         link: '/components/textarea',
       },
+      {
+        title: 'Checkbox',
+        link: '/components/checkbox',
+      },
     ],
   },
 ])

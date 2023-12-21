@@ -9,4 +9,7 @@ export default {
   presets: [
     elysiumPreset,
   ],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 } satisfies Config

@@ -43,6 +43,7 @@ declare module 'vue-router/auto/routes' {
     '/components/alert': RouteRecordInfo<'/components/alert', '/components/alert', Record<never, never>, Record<never, never>>,
     '/components/avatar': RouteRecordInfo<'/components/avatar', '/components/avatar', Record<never, never>, Record<never, never>>,
     '/components/button': RouteRecordInfo<'/components/button', '/components/button', Record<never, never>, Record<never, never>>,
+    '/components/checkbox': RouteRecordInfo<'/components/checkbox', '/components/checkbox', Record<never, never>, Record<never, never>>,
     '/components/input': RouteRecordInfo<'/components/input', '/components/input', Record<never, never>, Record<never, never>>,
     '/components/loader': RouteRecordInfo<'/components/loader', '/components/loader', Record<never, never>, Record<never, never>>,
     '/components/textarea': RouteRecordInfo<'/components/textarea', '/components/textarea', Record<never, never>, Record<never, never>>,

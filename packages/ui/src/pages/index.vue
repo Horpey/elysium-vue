@@ -3,6 +3,7 @@ import PhSparkleIcon from 'virtual:icons/ph/sparkle-duotone'
 
 const value = ref('')
 const textareaValue = ref('')
+const checkedValue = ref(false)
 </script>
 
 <template>
@@ -89,6 +90,15 @@ const textareaValue = ref('')
         <ElyTextarea v-model="textareaValue" size="SMALL" placeholder="Search.dsfsf.." :autoresize="false" />
 
         <span class="mr-2">{{ textareaValue }}</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="my-2">
+        {{ checkedValue }}
+        <ElyCheckbox v-model="checkedValue">
+          Checkbox
+        </ElyCheckbox>
       </div>
     </div>
   </div>
