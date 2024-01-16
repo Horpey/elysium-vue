@@ -1,6 +1,7 @@
 import { mount } from '@vue/test-utils'
 import { describe, expect, it, vi } from 'vitest'
 import ElyInput from '../ElyInput.vue'
+import type { ElyInputSizeKey } from '~/types/ElyInput'
 
 describe('elyInput', () => {
   it('renders with default props', async () => {
@@ -66,7 +67,7 @@ describe('elyInput', () => {
           name: 'email',
           modelValue: 'test@example.com',
           placeholder: 'Enter your email',
-          size,
+          size: size as ElyInputSizeKey,
           onInput: vi.fn(),
           onBlur: vi.fn(),
           onChange: vi.fn(),
