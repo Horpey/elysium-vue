@@ -31,7 +31,7 @@
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
-    "test": "vitest --ui"
+    "test": "vitest"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
