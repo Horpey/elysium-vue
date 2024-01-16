@@ -4,7 +4,7 @@ import type { InputHTMLAttributes } from 'vue'
 interface Props extends /* @vue-ignore */ InputHTMLAttributes {
   name?: string
   value?: string | number | boolean
-  modelValue?: boolean
+  modelValue?: string | number | boolean
   required?: boolean
   disabled?: boolean
   inputId?: string
@@ -13,12 +13,12 @@ interface Props extends /* @vue-ignore */ InputHTMLAttributes {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  inputId: 'checkbox',
-  name: 'checkbox',
+  inputId: 'radio',
+  name: 'radio',
   modelValue: undefined,
   required: false,
   disabled: false,
-  icon: undefined,
+  class: undefined,
   onClick: () => { },
   onChange: () => { },
 })
@@ -53,8 +53,8 @@ function onClick(event: Event) {
         v-model="toggle"
         :value="value"
         :name="name"
-        type="checkbox"
-        class="text-koromiko-700 focus:ring-koromiko-700 h-4 w-4 border-gray-300 disabled:cursor-not-allowed disabled:opacity-60"
+        type="radio"
+        class="h-4 w-4 border-gray-300 text-koromiko-700 focus:ring-koromiko-700 disabled:cursor-not-allowed disabled:opacity-60"
         :disabled="disabled"
         :checked="checked"
         :required="required"

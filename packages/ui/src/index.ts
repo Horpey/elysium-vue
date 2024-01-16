@@ -6,6 +6,8 @@ import ElyAvatar from './components/ElyAvatar.vue'
 import ElyInput from './components/ElyInput.vue'
 import ElyTextarea from './components/ElyTextarea.vue'
 import ElyCheckbox from './components/ElyCheckbox.vue'
+import ElyRadio from './components/ElyRadio.vue'
+import ElySwitch from './components/ElySwitch.vue'
 
 export {
   ElyAlert,
@@ -16,4 +18,6 @@ export {
   ElyInput,
   ElyTextarea,
   ElyCheckbox,
+  ElyRadio,
+  ElySwitch,
 }

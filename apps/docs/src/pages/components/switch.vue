@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ElyTextarea } from '@horpey/elysium-vue'
+import { ElySwitch } from '@horpey/elysium-vue'
 import { useMeta } from '~/composables/useMeta'
 
-const value = ref('')
+const value = ref(false)
+
 useMeta({
-  title: 'Textarea',
+  title: 'Radio',
 })
 </script>
 
@@ -14,34 +15,31 @@ useMeta({
       Components
     </div>
     <h1 class="text-5xl font-bold uppercase tracking-wider text-gray-900">
-      Textarea
+      Switch
     </h1>
 
     <div class="my-4">
       <p class="text-sm leading-relaxed">
-        Streamline text input with our Textarea component. Enhance user interactions by providing a versatile and resizable input field for longer content, making data entry a breeze in your application.
+        Add a touch of interactivity with our Switch component. Seamlessly integrate toggle functionality for a clean and intuitive way to control settings and options in your application.
       </p>
 
       <div class="my-10 flex flex-col space-y-4">
         <p class="font-mono text-xs uppercase tracking-wider">
           V-model <span v-if="value" class="text-gray-500">- {{ value }}</span>
         </p>
-        <div class="flex max-w-md flex-col">
-          <ElyTextarea v-model="value" />
+        <div class="flex max-w-md flex-col space-y-2">
+          <ElySwitch v-model="value">
+            <span class="text-sm">Enable notifications</span>
+          </ElySwitch>
         </div>
 
         <p class="font-mono text-xs uppercase tracking-wider">
           Disabled
         </p>
-        <div class="flex max-w-md flex-col">
-          <ElyTextarea disabled />
-        </div>
-
-        <p class="font-mono text-xs uppercase tracking-wider">
-          Rows
-        </p>
-        <div class="flex max-w-md flex-col">
-          <ElyTextarea placeholder="Search..." :rows="5" :resize="false" />
+        <div class="flex max-w-md flex-col space-y-2">
+          <ElySwitch v-model="value" disabled>
+            <span class="text-sm">Enable notifications</span>
+          </ElySwitch>
         </div>
       </div>
     </div>

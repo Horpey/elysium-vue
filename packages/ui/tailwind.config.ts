@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import tailwindForms from '@tailwindcss/forms'
 import elysiumPreset from './config/elysiumPreset'
 
 export default {
@@ -10,6 +11,6 @@ export default {
     elysiumPreset,
   ],
   plugins: [
-    require('@tailwindcss/forms'),
+    tailwindForms,
   ],
 } satisfies Config
