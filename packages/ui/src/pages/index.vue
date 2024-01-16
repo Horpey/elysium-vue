@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import PhSparkleIcon from 'virtual:icons/ph/sparkle-duotone'
 
-const value = ref('')
+const value = ref('Hello Value')
 const textareaValue = ref('')
 const checkedValue = ref(false)
 </script>
@@ -80,7 +80,25 @@ const checkedValue = ref(false)
 
       <div class="my-2">
         <span class="mr-2">{{ value }}</span>
-        <ElyInput v-model="value" :icon="PhSparkleIcon" placeholder="Search..." size="LARGE" loading />
+        <!-- <ElyInput v-model="value" :icon="PhSparkleIcon" placeholder="Search..." size="LARGE" loading /> -->
+
+        <ElyInput v-model="value" placeholder="Search..." size="SMALL" loading>
+          <template #icon>
+            <PhSparkleIcon />
+          </template>
+        </ElyInput>
+
+        <ElyInput v-model="value" placeholder="Search..." size="MEDIUM" loading>
+          <template #icon>
+            <PhSparkleIcon />
+          </template>
+        </ElyInput>
+
+        <ElyInput v-model="value" placeholder="Search..." size="LARGE" loading>
+          <template #icon>
+            <PhSparkleIcon />
+          </template>
+        </ElyInput>
       </div>
     </div>
 
