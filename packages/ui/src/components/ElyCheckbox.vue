@@ -54,7 +54,7 @@ function onClick(event: Event) {
         :value="value"
         :name="name"
         type="checkbox"
-        class="text-koromiko-700 focus:ring-koromiko-700 h-4 w-4 border-gray-300 disabled:cursor-not-allowed disabled:opacity-60"
+        class="h-4 w-4 border-gray-300 text-koromiko-700 focus:ring-koromiko-700 disabled:cursor-not-allowed disabled:opacity-60"
         :disabled="disabled"
         :checked="checked"
         :required="required"

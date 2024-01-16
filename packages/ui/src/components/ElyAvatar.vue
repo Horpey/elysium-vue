@@ -34,12 +34,11 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <span class="border-koromiko-700 bg-koromiko-800/10 text-koromiko-700 ring-koromiko-700 relative m-2 inline-flex items-center justify-center ring-1 ring-offset-2" :class="classes">
-    <img
-      v-if="src"
-      :src="src"
-      :alt="alt"
-    >
+  <span
+    class="relative m-2 inline-flex items-center justify-center border-koromiko-700 bg-koromiko-800/10 text-koromiko-700 ring-1 ring-koromiko-700 ring-offset-2"
+    :class="classes"
+  >
+    <img v-if="src" :src="src" :alt="alt">
 
     <span v-else class="font-medium uppercase leading-none">{{
       alt
@@ -49,8 +48,8 @@ const classes = computed(() => {
     }}</span>
 
     <span
-      v-if="chip"
-      class="absolute right-0 top-0 block -translate-y-1/2 translate-x-1/2 bg-green-400 ring-2 ring-white" :class="{
+      v-if="chip" class="absolute right-0 top-0 block -translate-y-1/2 translate-x-1/2 bg-green-400 ring-2 ring-white"
+      :class="{
         'h-1.5 w-1.5': size === 'SMALL',
         'h-2 w-2': size === 'MEDIUM',
         'h-3 w-3': size === 'LARGE',

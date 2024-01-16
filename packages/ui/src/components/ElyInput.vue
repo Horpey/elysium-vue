@@ -122,7 +122,7 @@ function onChange(event: Event) {
 
     <span
       v-if="$slots.icon"
-      class="text-koromiko-600 pointer-events-none absolute inset-y-0 start-0 flex h-full items-center"
+      class="pointer-events-none absolute inset-y-0 start-0 flex h-full items-center text-koromiko-600"
       :class="{
         'w-6 pl-1 [&>*]:h-2 [&>svg]:w-2': size === 'SMALL',
         'w-8 pl-2 [&>*]:h-4 [&>svg]:w-4': size === 'MEDIUM',
