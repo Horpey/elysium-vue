@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<Props>(), {
   modelValue: undefined,
   required: false,
   disabled: false,
-  class: undefined,
+  icon: undefined,
   onClick: () => { },
   onChange: () => { },
 })

@@ -40,6 +40,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 const emit = defineEmits(['update:modelValue'])
 
+const slots = useSlots()
+
 const input = ref<HTMLInputElement | null>(null)
 
 const classes = computed(() => {
@@ -60,7 +62,7 @@ const classes = computed(() => {
       break
   }
 
-  if (props.icon) {
+  if (slots.icon) {
     switch (props.size) {
       case 'SMALL':
         sizeClass = 'text-xs px-2 py-1 pl-6'
@@ -119,19 +121,15 @@ function onChange(event: Event) {
     >
 
     <span
-      class="pointer-events-none absolute inset-y-0 start-0 flex items-center"
-      :class="{ 'pl-2': size === 'SMALL', 'pl-3': size === 'MEDIUM', 'pl-4': size === 'LARGE' }"
+      v-if="$slots.icon"
+      class="pointer-events-none absolute inset-y-0 start-0 flex h-full items-center text-koromiko-600"
+      :class="{
+        'w-6 pl-1 [&>*]:h-2 [&>svg]:w-2': size === 'SMALL',
+        'w-8 pl-2 [&>*]:h-4 [&>svg]:w-4': size === 'MEDIUM',
+        'w-10 pl-3 [&>*]:h-6 [&>svg]:w-6': size === 'LARGE',
+      }"
     >
-      <component
-        :is="icon"
-        v-if="icon"
-        class="text-koromiko-600"
-        :class="{
-          'left-2 h-3 w-3': size === 'SMALL',
-          'left-3 h-4 w-4': size === 'MEDIUM',
-          'left-4 h-5 w-5': size === 'LARGE',
-        }"
-      />
+      <slot name="icon" />
     </span>
 
     <ElyLoader

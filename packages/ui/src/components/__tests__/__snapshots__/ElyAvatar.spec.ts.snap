@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`elyAvatar > renders with default props 1`] = `"<span class="relative m-2 inline-flex items-center justify-center border-koromiko-700 bg-koromiko-800/10 text-koromiko-700 ring-1 ring-koromiko-700 ring-offset-2 h-10 w-10"><img src="https://example.com/avatar.jpg" alt="John Doe"><!--v-if--></span>"`;
+
+exports[`elyAvatar > renders without src and with chip 1`] = `"<span class="relative m-2 inline-flex items-center justify-center border-koromiko-700 bg-koromiko-800/10 text-koromiko-700 ring-1 ring-koromiko-700 ring-offset-2 h-10 w-10"><span class="font-medium uppercase leading-none">JD</span><span class="absolute right-0 top-0 block -translate-y-1/2 translate-x-1/2 bg-green-400 ring-2 ring-white h-2 w-2"></span></span>"`;

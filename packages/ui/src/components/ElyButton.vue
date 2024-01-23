@@ -141,7 +141,7 @@ const buttonClass = computed(() => {
     </span>
   </a>
 
-  <button v-else :class="buttonClass" :disabled="disabled" @click="onClick">
+  <button v-else :class="buttonClass" :disabled="disabled" v-bind="$attrs" :type="type" @click="onClick">
     <span
       :class="{
         'flex items-center': loading || leftIcon || rightIcon,
