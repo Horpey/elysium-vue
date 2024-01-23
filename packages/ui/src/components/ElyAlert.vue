@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import type { FunctionalComponent } from 'vue'
 import type { ElyAlertThemeKey } from '~/types/ElyAlert'
 
 interface Props {
   title?: string
-  icon?: FunctionalComponent
   theme?: ElyAlertThemeKey
 }
 
@@ -38,7 +36,12 @@ const classes = computed(() => {
 <template>
   <div class="clip-top-right relative border border-l-8 px-3 py-2" :class="classes">
     <span class="flex space-x-3 font-mono text-xs">
-      <component :is="icon" class="h-4 w-4" />
+      <span
+        v-if="$slots.icon"
+        class="h-4 w-4" 
+      >
+      <slot name="icon" />
+    </span>
 
       <div class="flex flex-col space-y-1">
         <span v-if="title" class="text-xs font-bold uppercase tracking-wider">

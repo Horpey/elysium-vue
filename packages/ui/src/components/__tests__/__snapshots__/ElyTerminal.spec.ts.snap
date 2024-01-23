@@ -1,9 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`elyTerminal > renders correctly 1`] = `"<div class="border border-l-8 border-koromiko-800 bg-koromiko-800/10 px-4 py-2"></div>"`;
+exports[`elyTerminal > renders correctly 1`] = `"<div class=\\"border border-l-8 border-koromiko-800 bg-koromiko-800/10 px-4 py-2\\"></div>"`;
 
 exports[`elyTerminal > renders slot content 1`] = `
-"<div class="border border-l-8 border-koromiko-800 bg-koromiko-800/10 px-4 py-2">
+"<div class=\\"border border-l-8 border-koromiko-800 bg-koromiko-800/10 px-4 py-2\\">
   <p>Slot Content</p>
 </div>"
 `;
