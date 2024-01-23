@@ -7,7 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    copy: typeof import('./src/components/ElyCheckbox copy.vue')['default']
     ElyAlert: typeof import('./src/components/ElyAlert.vue')['default']
     ElyAvatar: typeof import('./src/components/ElyAvatar.vue')['default']
     ElyButton: typeof import('./src/components/ElyButton.vue')['default']
