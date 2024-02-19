@@ -70,7 +70,7 @@ const computedWidth = computed(() => {
         {{ countValue }}
       </span>
     </div>
-    <div class="relative">
+    <div class="relative overflow-hidden">
       <div
         class="h-1 w-full"
         :class="{
