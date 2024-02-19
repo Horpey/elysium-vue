@@ -115,8 +115,8 @@ importers:
   packages/ui:
     dependencies:
       '@headlessui/vue':
-        specifier: 1.7.16
-        version: 1.7.16(vue@3.3.8)
+        specifier: 1.7.19
+        version: 1.7.19(vue@3.3.8)
       '@unhead/vue':
         specifier: 1.8.8
         version: 1.8.8(vue@3.3.8)
@@ -653,12 +653,13 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@headlessui/vue@1.7.16(vue@3.3.8):
-    resolution: {integrity: sha512-nKT+nf/q6x198SsyK54mSszaQl/z+QxtASmgMEJtpxSX2Q0OPJX0upS/9daDyiECpeAsvjkoOrm2O/6PyBQ+Qg==}
+  /@headlessui/vue@1.7.19(vue@3.3.8):
+    resolution: {integrity: sha512-VFjKPybogux/5/QYGSq4zgG/x3RcxId15W8uguAJAjPBxelI23dwjOjTx/mIiMkM/Hd3rzFxcf2aIp56eEWRcA==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
+      '@tanstack/vue-virtual': 3.1.1(vue@3.3.8)
       vue: 3.3.8(typescript@5.3.2)
     dev: false
 
@@ -976,6 +977,19 @@ packages:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.3.5
     dev: true
+
+  /@tanstack/virtual-core@3.1.1:
+    resolution: {integrity: sha512-I5lerX+RWxLM+zw35gwwQIoLvtkOm0ecuQUlEjNey+Ga6TnR66WKLBnSHre59onugxhpDLT2nofRYzxf+izDFQ==}
+    dev: false
+
+  /@tanstack/vue-virtual@3.1.1(vue@3.3.8):
+    resolution: {integrity: sha512-62am497kFAOEdOlK7ECEqKiZPxgaPk5BbK4ah+PhTrvz1yNRCHbUbYGe8JwV1DIoY9k1MNXGBLUW5hAa5tvnzQ==}
+    peerDependencies:
+      vue: ^2.7.0 || ^3.0.0
+    dependencies:
+      '@tanstack/virtual-core': 3.1.1
+      vue: 3.3.8(typescript@5.3.2)
+    dev: false
 
   /@tootallnate/once@2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
