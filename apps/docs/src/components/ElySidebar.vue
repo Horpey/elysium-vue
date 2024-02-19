@@ -81,7 +81,7 @@ const items = ref([
   <aside class="sticky overflow-y-auto">
     <nav>
       <div v-for="(item, index) in items" :key="index" class="mb-6">
-        <h5 class="text-koromiko-700 mb-3 text-2xl">
+        <h5 class="mb-3 text-2xl text-koromiko-700">
           {{ item.title }}
         </h5>
 
