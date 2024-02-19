@@ -58,8 +58,8 @@ importers:
         specifier: 0.17.3
         version: 0.17.3(@vue-macros/reactivity-transform@0.4.2)(typescript@5.3.2)(vue-tsc@1.8.22)(vue@3.3.8)
       '@vue/test-utils':
-        specifier: 2.4.2
-        version: 2.4.2(vue@3.3.8)
+        specifier: 2.4.4
+        version: 2.4.4(vue@3.3.8)
       autoprefixer:
         specifier: 10.4.16
         version: 10.4.16(postcss@8.4.31)
@@ -155,8 +155,8 @@ importers:
         specifier: 0.17.3
         version: 0.17.3(@vue-macros/reactivity-transform@0.4.2)(typescript@5.3.2)(vue-tsc@1.8.22)(vue@3.3.8)
       '@vue/test-utils':
-        specifier: 2.4.2
-        version: 2.4.2(vue@3.3.8)
+        specifier: 2.4.4
+        version: 2.4.4(vue@3.3.8)
       autoprefixer:
         specifier: 10.4.16
         version: 10.4.16(postcss@8.4.31)
@@ -1935,8 +1935,8 @@ packages:
     resolution: {integrity: sha512-nmi3BtLpvqXAWoRZ6HQ+pFJOHBU4UnH3vD3opgmwXac7vhaHKA9nj1VeGjMggdB9eLtW83eHyPCmOU1qzdsC7Q==}
     dev: true
 
-  /@vue/test-utils@2.4.2(vue@3.3.8):
-    resolution: {integrity: sha512-07lLjpG1o9tEBoWQfVOFhDT7+WFCdDeECoeSdzOuVgIi6nxb2JDLGNNOV6+3crPpyg/jMlIocj96UROcgomiGg==}
+  /@vue/test-utils@2.4.4(vue@3.3.8):
+    resolution: {integrity: sha512-8jkRxz8pNhClAf4Co4ZrpAoFISdvT3nuSkUlY6Ys6rmTpw3DMWG/X3mw3gQ7QJzgCZO9f+zuE2kW57fi09MW7Q==}
     peerDependencies:
       '@vue/server-renderer': ^3.0.1
       vue: ^3.0.1
