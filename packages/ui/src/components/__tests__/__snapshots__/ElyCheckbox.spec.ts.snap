@@ -1,13 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`elyCheckbox > renders with custom props and triggers click event 1`] = `
-"<div class=\\"relative flex items-start\\">
-  <div class=\\"flex h-6 items-center\\"><input id=\\"custom-checkbox\\" name=\\"custom-checkbox\\" type=\\"checkbox\\" class=\\"h-4 w-4 border-gray-300 text-koromiko-700 focus:ring-koromiko-700 disabled:cursor-not-allowed disabled:opacity-60\\" required=\\"\\" value=\\"custom-value\\"></div><label for=\\"custom-checkbox\\" class=\\"ml-3 text-sm leading-6\\">Custom Checkbox Label</label>
+"<div class="relative flex items-start">
+  <div class="flex h-6 items-center"><input id="custom-checkbox" name="custom-checkbox" type="checkbox" class="h-4 w-4 border-gray-300 text-koromiko-700 focus:ring-koromiko-700 disabled:cursor-not-allowed disabled:opacity-60" required="" value="custom-value"></div><label for="custom-checkbox" class="ml-3 text-sm leading-6">Custom Checkbox Label</label>
 </div>"
 `;
 
 exports[`elyCheckbox > renders with default props 1`] = `
-"<div class=\\"relative flex items-start\\">
-  <div class=\\"flex h-6 items-center\\"><input id=\\"checkbox\\" name=\\"checkbox\\" type=\\"checkbox\\" class=\\"h-4 w-4 border-gray-300 text-koromiko-700 focus:ring-koromiko-700 disabled:cursor-not-allowed disabled:opacity-60\\" value=\\"false\\"></div><label for=\\"checkbox\\" class=\\"ml-3 text-sm leading-6\\"></label>
+"<div class="relative flex items-start">
+  <div class="flex h-6 items-center"><input id="checkbox" name="checkbox" type="checkbox" class="h-4 w-4 border-gray-300 text-koromiko-700 focus:ring-koromiko-700 disabled:cursor-not-allowed disabled:opacity-60" value="false"></div><label for="checkbox" class="ml-3 text-sm leading-6"></label>
 </div>"
 `;

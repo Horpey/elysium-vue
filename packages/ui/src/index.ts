@@ -8,6 +8,9 @@ import ElyTextarea from './components/ElyTextarea.vue'
 import ElyCheckbox from './components/ElyCheckbox.vue'
 import ElyRadio from './components/ElyRadio.vue'
 import ElySwitch from './components/ElySwitch.vue'
+import ElyBadge from './components/ElyBadge.vue'
+import ElyProgress from './components/ElyProgress.vue'
+import ElyProgressCircular from './components/ElyProgressCircular.vue'
 
 export {
   ElyAlert,
@@ -20,4 +23,7 @@ export {
   ElyCheckbox,
   ElyRadio,
   ElySwitch,
+  ElyBadge,
+  ElyProgress,
+  ElyProgressCircular,
 }

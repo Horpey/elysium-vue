@@ -1,11 +1,11 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`elyAlert > renders with custom icon 1`] = `
-"<div class=\\"clip-top-right relative border border-l-8 px-3 py-2 border-koromiko-700 bg-koromiko-800/10 text-koromiko-900\\"><span class=\\"flex space-x-3 font-mono text-xs\\"><span class=\\"h-4 w-4\\"><svg>mock icon</svg></span>
-  <div class=\\"flex flex-col space-y-1\\"><span class=\\"text-xs font-bold uppercase tracking-wider\\">Custom Title</span><span></span></div></span>
+"<div class="clip-top-right relative border border-l-8 px-3 py-2 border-koromiko-700 bg-koromiko-800/10 text-koromiko-900"><span class="flex space-x-3 font-mono text-xs"><span class="h-4 w-4"><svg>mock icon</svg></span>
+  <div class="flex flex-col space-y-1"><span class="text-xs font-bold uppercase tracking-wider">Custom Title</span><span></span></div></span>
 </div>"
 `;
 
-exports[`elyAlert > renders with custom props and slots 1`] = `"<div class=\\"clip-top-right relative border border-l-8 px-3 py-2 border-koromiko-700 bg-koromiko-800/10 text-koromiko-900\\"><span class=\\"flex space-x-3 font-mono text-xs\\"><!--v-if--><div class=\\"flex flex-col space-y-1\\"><span class=\\"text-xs font-bold uppercase tracking-wider\\">Custom Title</span><span><p>Custom content</p></span></div></span></div>"`;
+exports[`elyAlert > renders with custom props and slots 1`] = `"<div class="clip-top-right relative border border-l-8 px-3 py-2 border-koromiko-700 bg-koromiko-800/10 text-koromiko-900"><span class="flex space-x-3 font-mono text-xs"><!--v-if--><div class="flex flex-col space-y-1"><span class="text-xs font-bold uppercase tracking-wider">Custom Title</span><span><p>Custom content</p></span></div></span></div>"`;
 
-exports[`elyAlert > renders with default props 1`] = `"<div class=\\"clip-top-right relative border border-l-8 px-3 py-2 border-koromiko-700 bg-koromiko-800/10 text-koromiko-900\\"><span class=\\"flex space-x-3 font-mono text-xs\\"><!--v-if--><div class=\\"flex flex-col space-y-1\\"><!--v-if--><span></span></div></span></div>"`;
+exports[`elyAlert > renders with default props 1`] = `"<div class="clip-top-right relative border border-l-8 px-3 py-2 border-koromiko-700 bg-koromiko-800/10 text-koromiko-900"><span class="flex space-x-3 font-mono text-xs"><!--v-if--><div class="flex flex-col space-y-1"><!--v-if--><span></span></div></span></div>"`;
