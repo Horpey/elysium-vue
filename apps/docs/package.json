@@ -21,7 +21,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "2.0.0",
     "@iconify-json/carbon": "1.1.30",
-    "@iconify-json/ph": "1.1.7",
+    "@iconify-json/ph": "1.1.11",
     "@tailwindcss/forms": "^0.5.7",
     "@types/node": "20.9.2",
     "@vitejs/plugin-vue": "4.5.0",
