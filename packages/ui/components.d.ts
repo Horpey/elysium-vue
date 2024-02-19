@@ -14,6 +14,7 @@ declare module 'vue' {
     ElyCheckbox: typeof import('./src/components/ElyCheckbox.vue')['default']
     ElyInput: typeof import('./src/components/ElyInput.vue')['default']
     ElyLoader: typeof import('./src/components/ElyLoader.vue')['default']
+    ElyModal: typeof import('./src/components/ElyModal.vue')['default']
     ElyProgress: typeof import('./src/components/ElyProgress.vue')['default']
     ElyProgressCircular: typeof import('./src/components/ElyProgressCircular.vue')['default']
     ElyRadio: typeof import('./src/components/ElyRadio.vue')['default']

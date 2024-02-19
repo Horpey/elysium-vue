@@ -47,6 +47,7 @@ declare module 'vue-router/auto/routes' {
     '/components/checkbox': RouteRecordInfo<'/components/checkbox', '/components/checkbox', Record<never, never>, Record<never, never>>,
     '/components/input': RouteRecordInfo<'/components/input', '/components/input', Record<never, never>, Record<never, never>>,
     '/components/loader': RouteRecordInfo<'/components/loader', '/components/loader', Record<never, never>, Record<never, never>>,
+    '/components/modal': RouteRecordInfo<'/components/modal', '/components/modal', Record<never, never>, Record<never, never>>,
     '/components/progress': RouteRecordInfo<'/components/progress', '/components/progress', Record<never, never>, Record<never, never>>,
     '/components/progress-circular': RouteRecordInfo<'/components/progress-circular', '/components/progress-circular', Record<never, never>, Record<never, never>>,
     '/components/radio': RouteRecordInfo<'/components/radio', '/components/radio', Record<never, never>, Record<never, never>>,

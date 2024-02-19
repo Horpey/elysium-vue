@@ -11,6 +11,7 @@ import ElySwitch from './components/ElySwitch.vue'
 import ElyBadge from './components/ElyBadge.vue'
 import ElyProgress from './components/ElyProgress.vue'
 import ElyProgressCircular from './components/ElyProgressCircular.vue'
+import ElyModal from './components/ElyModal.vue'
 
 export {
   ElyAlert,
@@ -26,4 +27,5 @@ export {
   ElyBadge,
   ElyProgress,
   ElyProgressCircular,
+  ElyModal,
 }

@@ -34,7 +34,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.16",
+    "@headlessui/vue": "1.7.16",
     "@unhead/vue": "1.8.8",
     "@vueuse/core": "10.6.1",
     "vue": "3.3.8",
@@ -44,10 +44,10 @@
     "@antfu/eslint-config": "2.0.0",
     "@iconify-json/carbon": "1.1.21",
     "@iconify-json/ph": "1.1.7",
-    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/forms": "0.5.7",
     "@types/node": "20.9.2",
     "@vitejs/plugin-vue": "4.5.0",
-    "@vitest/ui": "^1.2.0",
+    "@vitest/ui": "1.2.0",
     "@vue-macros/volar": "0.17.3",
     "@vue/test-utils": "2.4.2",
     "autoprefixer": "10.4.16",
