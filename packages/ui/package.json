@@ -45,7 +45,7 @@
     "@iconify-json/carbon": "1.1.30",
     "@iconify-json/ph": "1.1.11",
     "@tailwindcss/forms": "0.5.7",
-    "@types/node": "20.9.2",
+    "@types/node": "20.11.19",
     "@vitejs/plugin-vue": "4.5.0",
     "@vitest/ui": "1.2.0",
     "@vue-macros/volar": "0.17.3",
