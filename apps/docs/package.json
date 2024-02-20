@@ -32,7 +32,7 @@
     "eslint-plugin-tailwindcss": "3.13.0",
     "jsdom": "22.1.0",
     "pnpm": "8.10.5",
-    "postcss": "8.4.31",
+    "postcss": "8.4.35",
     "sass": "1.69.5",
     "tailwindcss": "3.3.5",
     "typescript": "5.3.2",
