@@ -28,7 +28,7 @@
     "@vue-macros/volar": "0.18.11",
     "@vue/test-utils": "2.4.4",
     "autoprefixer": "10.4.17",
-    "eslint": "8.54.0",
+    "eslint": "8.56.0",
     "eslint-plugin-tailwindcss": "3.13.0",
     "jsdom": "22.1.0",
     "pnpm": "8.10.5",
