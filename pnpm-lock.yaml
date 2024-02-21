@@ -67,8 +67,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       eslint-plugin-tailwindcss:
-        specifier: 3.14.2
-        version: 3.14.2(tailwindcss@3.4.1)
+        specifier: 3.14.3
+        version: 3.14.3(tailwindcss@3.4.1)
       jsdom:
         specifier: 22.1.0
         version: 22.1.0
@@ -124,7 +124,7 @@ importers:
         specifier: 10.8.0
         version: 10.8.0(vue@3.3.8)
       dialog-polyfill:
-        specifier: ^0.5.6
+        specifier: 0.5.6
         version: 0.5.6
       vue:
         specifier: 3.3.8
@@ -167,8 +167,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       eslint-plugin-tailwindcss:
-        specifier: 3.14.2
-        version: 3.14.2(tailwindcss@3.4.1)
+        specifier: 3.14.3
+        version: 3.14.3(tailwindcss@3.4.1)
       jsdom:
         specifier: 22.1.0
         version: 22.1.0
@@ -2992,8 +2992,8 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-tailwindcss@3.14.2(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-fNzdf4poZP2yQC0xC2prQxMuArMSb5mnellLQvwb9HC3NcLzxs+0IVKWIg1BqUqyui0c+bbjMmhWcKUWK67SLQ==}
+  /eslint-plugin-tailwindcss@3.14.3(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-1MKT8CrVuqVJleHxb7ICHsF2QwO0G+VJ28athTtlcOkccp0qmwK7nCUa1C9paCZ+VVgQU4fonsjLz/wUxoMHJQ==}
     engines: {node: '>=12.13.0'}
     peerDependencies:
       tailwindcss: ^3.4.0
