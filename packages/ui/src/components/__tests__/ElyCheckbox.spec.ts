@@ -14,8 +14,7 @@ describe('elyCheckbox', () => {
     expect(wrapper.find('input[type="checkbox"]').attributes('id')).toBe('checkbox')
     expect(wrapper.find('input[type="checkbox"]').attributes('name')).toBe('checkbox')
     expect(wrapper.find('input[type="checkbox"]').attributes('disabled')).toBe(undefined)
-    expect(wrapper.find('input[type="checkbox"]').classes()).toContain('h-4')
-    expect(wrapper.find('input[type="checkbox"]').classes()).toContain('w-4')
+    expect(wrapper.find('input[type="checkbox"]').classes()).toContain('size-4')
     // ... add more assertions based on your styling and default props
 
     // Assert slot content is not provided
