@@ -39,9 +39,9 @@ describe('elyAvatar', () => {
     // Assert that the component is rendered
     expect(wrapper.exists()).toBe(true)
     expect(wrapper.find('img').exists()).toBe(false)
-    expect(wrapper.find('.font-medium.uppercase.leading-none').text()).toBe('JD') // Initials from alt
+    expect(wrapper.find('.font-medium.uppercase.leading-none').text()).toBe('JD')
     expect(wrapper.find('.absolute.right-0.top-0.block').exists()).toBe(true)
-    expect(wrapper.find('.h-2.w-2').exists()).toBe(true) // Medium size class
+    expect(wrapper.find('.size-2').exists()).toBe(true)
 
     // Assert snapshot
     expect(wrapper.html()).toMatchSnapshot()
