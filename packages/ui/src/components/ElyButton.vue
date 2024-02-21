@@ -87,9 +87,9 @@ const buttonClass = computed(() => {
       <span v-if="leftIcon">
         <component
           :is="leftIcon" :class="{
-            'h-3 w-3': size === 'SMALL',
-            'h-4 w-4': size === 'MEDIUM',
-            'h-5 w-5': size === 'LARGE',
+            'size-3': size === 'SMALL',
+            'size-4': size === 'MEDIUM',
+            'size-5': size === 'LARGE',
           }"
         />
       </span>
@@ -99,9 +99,9 @@ const buttonClass = computed(() => {
       <span v-if="rightIcon">
         <component
           :is="rightIcon" :class="{
-            'h-3 w-3': size === 'SMALL',
-            'h-4 w-4': size === 'MEDIUM',
-            'h-5 w-5': size === 'LARGE',
+            'size-3': size === 'SMALL',
+            'size-4': size === 'MEDIUM',
+            'size-5': size === 'LARGE',
           }"
         />
       </span>
@@ -120,9 +120,9 @@ const buttonClass = computed(() => {
       <span v-if="leftIcon">
         <component
           :is="leftIcon" :class="{
-            'h-3 w-3': size === 'SMALL',
-            'h-4 w-4': size === 'MEDIUM',
-            'h-5 w-5': size === 'LARGE',
+            'size-3': size === 'SMALL',
+            'size-4': size === 'MEDIUM',
+            'size-5': size === 'LARGE',
           }"
         />
       </span>
@@ -132,9 +132,9 @@ const buttonClass = computed(() => {
       <span v-if="rightIcon">
         <component
           :is="rightIcon" :class="{
-            'h-3 w-3': size === 'SMALL',
-            'h-4 w-4': size === 'MEDIUM',
-            'h-5 w-5': size === 'LARGE',
+            'size-3': size === 'SMALL',
+            'size-4': size === 'MEDIUM',
+            'size-5': size === 'LARGE',
           }"
         />
       </span>
@@ -153,9 +153,9 @@ const buttonClass = computed(() => {
       <span v-if="leftIcon">
         <component
           :is="leftIcon" :class="{
-            'h-3 w-3': size === 'SMALL',
-            'h-4 w-4': size === 'MEDIUM',
-            'h-5 w-5': size === 'LARGE',
+            'size-3': size === 'SMALL',
+            'size-4': size === 'MEDIUM',
+            'size-5': size === 'LARGE',
           }"
         />
       </span>
@@ -165,9 +165,9 @@ const buttonClass = computed(() => {
       <span v-if="rightIcon">
         <component
           :is="rightIcon" :class="{
-            'h-3 w-3': size === 'SMALL',
-            'h-4 w-4': size === 'MEDIUM',
-            'h-5 w-5': size === 'LARGE',
+            'size-3': size === 'SMALL',
+            'size-4': size === 'MEDIUM',
+            'size-5': size === 'LARGE',
           }"
         />
       </span>

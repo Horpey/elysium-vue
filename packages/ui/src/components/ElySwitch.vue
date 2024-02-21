@@ -46,7 +46,7 @@ const enabled = computed({
     >
       <span
         aria-hidden="true"
-        class="pointer-events-none inline-block h-5 w-5 bg-white shadow ring-0 transition duration-200 ease-in-out" :class="[enabled ? 'translate-x-5' : 'translate-x-0']"
+        class="pointer-events-none inline-block size-5 bg-white shadow ring-0 transition duration-200 ease-in-out" :class="[enabled ? 'translate-x-5' : 'translate-x-0']"
       />
     </Switch>
     <SwitchLabel as="span" class="ml-3 cursor-pointer text-sm leading-6">

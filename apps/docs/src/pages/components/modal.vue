@@ -6,7 +6,8 @@ useMeta({
   title: 'Modal',
 })
 
-const isOpen = ref(true)
+const isOpen = ref(false)
+const preventClose = ref(false)
 </script>
 
 <template>
@@ -28,19 +29,35 @@ const isOpen = ref(true)
           Usage
         </p>
         <div class="flex items-start space-x-4">
-          <ElyButton size="SMALL" @click="isOpen = true">
+          <ElyButton size="SMALL" @click="isOpen = true; preventClose = false">
             Open Modal
           </ElyButton>
+        </div>
 
-          <ElyModal v-model="isOpen">
-            <div class="p-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, nihil possimus nobis dolorem sed asperiores accusantium vel temporibus eveniet totam sapiente architecto quis provident maxime iure accusamus voluptas, alias itaque.
-              </p>
-            </div>
-          </ElyModal>
+        <p class="font-mono text-xs uppercase tracking-wider">
+          Prevent Close
+        </p>
+        <div class="flex items-start space-x-4">
+          <ElyButton size="SMALL" @click="isOpen = true; preventClose = true">
+            Open Modal
+          </ElyButton>
         </div>
       </div>
     </div>
+
+    <ElyModal v-model="isOpen" :prevent-close="preventClose">
+      <template #header>
+        Modal Header
+      </template>
+      <p class="text-sm leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui
+        eget nunc lacinia lacinia
+      </p>
+      <template #footer>
+        <ElyButton size="SMALL" @click="isOpen = false">
+          Close
+        </ElyButton>
+      </template>
+    </ElyModal>
   </ElyDocLayout>
 </template>

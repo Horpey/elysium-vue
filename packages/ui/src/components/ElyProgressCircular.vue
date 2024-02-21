@@ -86,7 +86,7 @@ const countValue = computed(() => {
     </svg>
 
     <div
-      class="absolute top-0 flex h-full w-full items-center justify-center stroke-none text-xs"
+      class="absolute top-0 flex size-full items-center justify-center stroke-none text-xs"
       :class="{
         'text-koromiko-700': props.theme === 'PRIMARY',
         'text-aquamarine-700': props.theme === 'SECONDARY',

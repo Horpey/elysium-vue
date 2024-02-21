@@ -123,6 +123,9 @@ importers:
       '@vueuse/core':
         specifier: 10.8.0
         version: 10.8.0(vue@3.3.8)
+      dialog-polyfill:
+        specifier: ^0.5.6
+        version: 0.5.6
       vue:
         specifier: 3.3.8
         version: 3.3.8(typescript@5.3.3)
@@ -2630,6 +2633,10 @@ packages:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
     dev: true
+
+  /dialog-polyfill@0.5.6:
+    resolution: {integrity: sha512-ZbVDJI9uvxPAKze6z146rmfUZjBqNEwcnFTVamQzXH+svluiV7swmVIGr7miwADgfgt1G2JQIytypM9fbyhX4w==}
+    dev: false
 
   /didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}

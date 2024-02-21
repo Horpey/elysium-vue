@@ -54,7 +54,7 @@ function onClick(event: Event) {
         :value="value"
         :name="name"
         type="radio"
-        class="h-4 w-4 border-gray-300 text-koromiko-700 focus:ring-koromiko-700 disabled:cursor-not-allowed disabled:opacity-60"
+        class="size-4 border-gray-300 text-koromiko-700 focus:ring-koromiko-700 disabled:cursor-not-allowed disabled:opacity-60"
         :disabled="disabled"
         :checked="checked"
         :required="required"
