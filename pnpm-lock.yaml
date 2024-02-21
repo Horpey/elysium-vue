@@ -124,7 +124,7 @@ importers:
         specifier: 10.8.0
         version: 10.8.0(vue@3.3.8)
       dialog-polyfill:
-        specifier: ^0.5.6
+        specifier: 0.5.6
         version: 0.5.6
       vue:
         specifier: 3.3.8
