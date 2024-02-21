@@ -36,7 +36,7 @@
   "dependencies": {
     "@headlessui/vue": "1.7.19",
     "@unhead/vue": "1.8.10",
-    "@vueuse/core": "10.6.1",
+    "@vueuse/core": "10.8.0",
     "vue": "3.3.8",
     "vue-router": "4.2.5"
   },
