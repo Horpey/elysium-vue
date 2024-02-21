@@ -1,11 +1,4 @@
 <script setup lang="ts">
-import {
-  Dialog,
-  DialogDescription,
-  DialogPanel,
-  DialogTitle,
-} from '@headlessui/vue'
-
 interface Props {
   modelValue?: boolean
 }
@@ -23,7 +16,7 @@ function setIsOpen(value: boolean) {
 
 <template>
   {{ modelValue }}
-  <Dialog :open="modelValue" @close="setIsOpen">
+  <!-- <Dialog :open="modelValue" @close="setIsOpen">
     <DialogPanel>
       <DialogTitle>Deactivate account</DialogTitle>
       <DialogDescription>
@@ -42,5 +35,5 @@ function setIsOpen(value: boolean) {
         Cancel
       </button>
     </DialogPanel>
-  </Dialog>
+  </Dialog> -->
 </template>
