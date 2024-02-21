@@ -19,7 +19,7 @@ const countValue = computed(() => {
   if (Array.isArray(props.max))
     return props.max[props.value]
 
-  return `${props.value}%`
+  return props.max === 100 ? `${props.value}%` : props.value
 })
 
 const classes = computed(() => {

@@ -22,7 +22,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "docs": "pnpm -r --filter='./apps/**' run dev",
+    "dev:docs": "pnpm -r --filter='./apps/**' run dev",
     "build": "cross-env NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run build && pnpm -r --parallel --filter='./apps/**' run build",
     "dev": "cross-env NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm -r --parallel --filter='./packages/**' run dev",
     "test": "pnpm -r --filter='./packages/**' run test",
