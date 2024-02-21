@@ -1,5 +1,4 @@
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
 import {
   Dialog,
   DialogDescription,
@@ -7,15 +6,24 @@ import {
   DialogTitle,
 } from '@headlessui/vue'
 
-const isOpen = ref(true)
+interface Props {
+  modelValue?: boolean
+}
 
-function setIsOpen(value) {
-  isOpen.value = value
+withDefaults(defineProps<Props>(), {
+  modelValue: false,
+})
+
+const emit = defineEmits(['update:modelValue'])
+
+function setIsOpen(value: boolean) {
+  emit('update:modelValue', value)
 }
 </script>
 
 <template>
-  <Dialog :open="isOpen" @close="setIsOpen">
+  {{ modelValue }}
+  <Dialog :open="modelValue" @close="setIsOpen">
     <DialogPanel>
       <DialogTitle>Deactivate account</DialogTitle>
       <DialogDescription>

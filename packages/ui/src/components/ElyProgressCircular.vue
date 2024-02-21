@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import type { ElyProgressThemeKey } from '~/types/ElyProgress'
 
+// TODO: Add Validation for value and max props to ensure they are not negative numbers and not greater than the max value
+
 interface Props {
   value: number
   max?: number | string[]
@@ -46,10 +48,14 @@ const progressClass = computed(() => {
   }
 })
 
-const circleDasharray = '251.2 251.2' // Circumference of a circle with radius 40
+const OFFSET = 251.2
+const circleDasharray = `${OFFSET} ${OFFSET}` // Full circle
 const circleDashoffset = computed(() => {
   if (Array.isArray(props.max))
-    return 251.2 - (251.2 * props.value) / (props.max.length - 1)
+    return OFFSET - (OFFSET * props.value) / (props.max.length - 1)
+
+  if (props.max !== 100)
+    return OFFSET - (OFFSET * props.value) / props.max
 
   const radius = 40
   const circumference = 2 * Math.PI * radius
@@ -60,7 +66,7 @@ const countValue = computed(() => {
   if (Array.isArray(props.max))
     return props.max[props.value]
 
-  return `${props.value}%`
+  return props.max === 100 ? `${props.value}%` : props.value
 })
 </script>
 
@@ -79,7 +85,7 @@ const countValue = computed(() => {
       />
     </svg>
 
-    <span
+    <div
       class="absolute top-0 flex h-full w-full items-center justify-center stroke-none text-xs"
       :class="{
         'text-koromiko-700': props.theme === 'PRIMARY',
@@ -89,8 +95,8 @@ const countValue = computed(() => {
 
       }"
     >
-      {{ countValue }}
-    </span>
+      <span class="bg-white/60">{{ countValue }}</span>
+    </div>
   </div>
 </template>
 

@@ -9,7 +9,7 @@ useMeta({
 
 <template>
   <ElyDocLayout>
-    <div class="mb-4 flex items-center gap-1.5 text-sm font-semibold text-koromiko-700">
+    <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
       Components
     </div>
     <h1 class="text-5xl font-bold uppercase tracking-wider text-gray-900">
@@ -33,7 +33,7 @@ useMeta({
           Max
         </p>
         <div>
-          <ElyProgressCircular :value="4" :max="5" />
+          <ElyProgressCircular :value="5" :max="4" />
         </div>
 
         <p class="font-mono text-xs uppercase tracking-wider">
@@ -45,13 +45,6 @@ useMeta({
               'Waiting', 'Cloning...', 'Migrating...', 'Almost...', 'Deployed!',
             ]"
           />
-        </div>
-
-        <p class="font-mono text-xs uppercase tracking-wider">
-          Animation
-        </p>
-        <div>
-          <ElyProgressCircular animation />
         </div>
 
         <p class="font-mono text-xs uppercase tracking-wider">

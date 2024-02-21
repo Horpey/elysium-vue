@@ -6,12 +6,12 @@ useMeta({
   title: 'Modal',
 })
 
-const isOpen = ref(false)
+const isOpen = ref(true)
 </script>
 
 <template>
   <ElyDocLayout>
-    <div class="mb-4 flex items-center gap-1.5 text-sm font-semibold text-koromiko-700">
+    <div class="text-koromiko-700 mb-4 flex items-center gap-1.5 text-sm font-semibold">
       Components
     </div>
     <h1 class="text-5xl font-bold uppercase tracking-wider text-gray-900">
