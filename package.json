@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "cross-env": "7.0.3",
-    "lint-staged": "15.1.0",
+    "lint-staged": "15.2.2",
     "simple-git-hooks": "2.9.0"
   },
   "simple-git-hooks": {
