@@ -29,6 +29,10 @@ const items = ref([
         link: '/components/avatar',
       },
       {
+        title: 'Badge',
+        link: '/components/badge',
+      },
+      {
         title: 'Button',
         link: '/components/button',
       },
@@ -55,6 +59,18 @@ const items = ref([
       {
         title: 'Switch',
         link: '/components/switch',
+      },
+      {
+        title: 'Progress',
+        link: '/components/progress',
+      },
+      {
+        title: 'Progress Circular',
+        link: '/components/progress-circular',
+      },
+      {
+        title: 'Modal',
+        link: '/components/modal',
       },
     ],
   },

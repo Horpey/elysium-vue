@@ -38,10 +38,10 @@ const classes = computed(() => {
     <span class="flex space-x-3 font-mono text-xs">
       <span
         v-if="$slots.icon"
-        class="h-4 w-4" 
+        class="size-4"
       >
-      <slot name="icon" />
-    </span>
+        <slot name="icon" />
+      </span>
 
       <div class="flex flex-col space-y-1">
         <span v-if="title" class="text-xs font-bold uppercase tracking-wider">
