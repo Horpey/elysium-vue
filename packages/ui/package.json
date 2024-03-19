@@ -1,7 +1,7 @@
 {
   "name": "@horpey/elysium-vue",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.10.5",
   "homepage": "https://elysium-vue.vercel.app",
   "repository": "horpey/elysium-vue",
@@ -10,6 +10,11 @@
       "types": "./dist/src/index.d.ts",
       "import": "./dist/horpey-elysium-vue.es.js",
       "require": "./dist/horpey-elysium-vue.umd.js"
+    },
+    "./elysiumPreset": {
+      "types": "./dist/src/elysiumPreset.d.ts",
+      "import": "./dist/elysiumPreset.js",
+      "require": "./dist/elysiumPreset.js"
     },
     "./style.css": "./dist/style.css"
   },
@@ -20,7 +25,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && pnpm run build:preset",
+    "build:preset": "tsc ./src/elysiumPreset.ts --outDir ./dist",
     "dev": "vite --port 3333 --open",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
