@@ -1,7 +1,7 @@
-import type { Config } from 'tailwindcss'
+/** @type {import('tailwindcss').Config} */
 import defaultTheme from 'tailwindcss/defaultTheme'
 
-export default module.exports = {
+module.exports = {
   content: {
     files: [],
   },
@@ -81,4 +81,4 @@ export default module.exports = {
       mono: ['Chakra Petch', ...defaultTheme.fontFamily.mono],
     },
   },
-} satisfies Config
+}
