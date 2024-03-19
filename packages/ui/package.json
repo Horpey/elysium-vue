@@ -1,13 +1,13 @@
 {
   "name": "@horpey/elysium-vue",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "packageManager": "pnpm@8.10.5",
   "homepage": "https://elysium-vue.vercel.app",
   "repository": "horpey/elysium-vue",
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
+      "types": "./dist/src/index.d.ts",
       "import": "./dist/horpey-elysium-vue.es.js",
       "require": "./dist/horpey-elysium-vue.umd.js"
     },
@@ -19,7 +19,7 @@
   },
   "main": "./dist/horpey-elysium-vue.umd.js",
   "module": "./dist/horpey-elysium-vue.es.js",
-  "types": "./dist/types/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "files": [
     "dist"
   ],
