@@ -1,4 +1,4 @@
-import * as elysiumPreset from './elysiumPreset'
+import elysiumPreset from './elysiumPreset'
 import ElyAlert from './components/ElyAlert.vue'
 import ElyButton from './components/ElyButton.vue'
 import ElyLoader from './components/ElyLoader.vue'
