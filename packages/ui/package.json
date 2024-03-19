@@ -1,7 +1,7 @@
 {
   "name": "@horpey/elysium-vue",
   "type": "module",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "packageManager": "pnpm@8.10.5",
   "homepage": "https://elysium-vue.vercel.app",
   "repository": "horpey/elysium-vue",
@@ -11,11 +11,7 @@
       "import": "./dist/horpey-elysium-vue.es.js",
       "require": "./dist/horpey-elysium-vue.umd.js"
     },
-    "./dist/style.css": "./dist/style.css",
-    "./elysiumPreset": {
-      "import": "./dist/config/elysiumPreset.d.ts",
-      "require": "./dist/config/elysiumPreset.d.ts"
-    }
+    "./style.css": "./dist/style.css"
   },
   "main": "./dist/horpey-elysium-vue.umd.js",
   "module": "./dist/horpey-elysium-vue.es.js",

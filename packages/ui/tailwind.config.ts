@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss'
 import tailwindForms from '@tailwindcss/forms'
-import elysiumPreset from './config/elysiumPreset'
+import elysiumPreset from './src/elysiumPreset'
 
 export default {
   content: [
