@@ -3,14 +3,28 @@ import tailwindForms from '@tailwindcss/forms'
 import elysiumPreset from './src/elysiumPreset'
 
 export default {
+  ...elysiumPreset,
   content: [
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
-  presets: [
-    elysiumPreset,
-  ],
+  // presets: [
+  //   elysiumPreset,
+  // ],
   plugins: [
     tailwindForms,
   ],
 } satisfies Config
+
+// export default {
+//   content: [
+//     './index.html',
+//     './src/**/*.{vue,js,ts,jsx,tsx}',
+//   ],
+//   presets: [
+//     elysiumPreset,
+//   ],
+//   plugins: [
+//     tailwindForms,
+//   ],
+// } satisfies Config
