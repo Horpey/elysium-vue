@@ -1,7 +1,7 @@
 {
   "name": "@horpey/elysium-vue",
   "type": "module",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "packageManager": "pnpm@8.10.5",
   "homepage": "https://elysium-vue.vercel.app",
   "repository": "horpey/elysium-vue",
@@ -20,7 +20,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && pnpm run build:style",
+    "build:style": "postcss src/styles/index.css -o dist/style.css",
     "dev": "vite --port 3333 --open",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
@@ -51,6 +52,7 @@
     "jsdom": "22.1.0",
     "pnpm": "8.10.5",
     "postcss": "8.4.35",
+    "postcss-cli": "^11.0.0",
     "sass": "1.71.1",
     "simple-git-hooks": "2.9.0",
     "tailwindcss": "3.4.1",
