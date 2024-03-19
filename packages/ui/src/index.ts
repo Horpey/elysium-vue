@@ -1,4 +1,4 @@
-import elysiumPreset from './elysiumPreset'
+import * as elysiumPreset from './elysiumPreset'
 import ElyAlert from './components/ElyAlert.vue'
 import ElyButton from './components/ElyButton.vue'
 import ElyLoader from './components/ElyLoader.vue'
@@ -11,6 +11,7 @@ import ElyRadio from './components/ElyRadio.vue'
 import ElySwitch from './components/ElySwitch.vue'
 import ElyBadge from './components/ElyBadge.vue'
 import ElyProgress from './components/ElyProgress.vue'
+
 // import ElyProgressCircular from './components/ElyProgressCircular.vue'
 import ElyModal from './components/ElyModal.vue'
 
