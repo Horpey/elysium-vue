@@ -62,6 +62,8 @@ export default defineConfig({
   ],
 
   build: {
+    cssCodeSplit: false,
+    minify: false,
     lib: {
       // src/indext.ts is where we have exported the component(s)
       entry: path.resolve(__dirname, 'src/index.ts'),

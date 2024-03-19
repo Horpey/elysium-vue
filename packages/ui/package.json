@@ -8,22 +8,21 @@
   "repository": "horpey/elysium-vue",
   "exports": {
     ".": {
-      "import": "./src/index.ts",
-      "require": "./src/index.ts"
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/horpey-elysium-vue.es.js",
+      "require": "./dist/horpey-elysium-vue.umd.js"
     },
-    "./index.css": {
-      "import": "./src/styles/index.css",
-      "require": "./src/styles/index.css"
-    },
+    "./dist/style.css": "./dist/style.css",
     "./elysiumPreset": {
-      "import": "./config/elysiumPreset.ts",
-      "require": "./config/elysiumPreset.ts"
+      "import": "./dist/config/elysiumPreset.d.ts",
+      "require": "./dist/config/elysiumPreset.d.ts"
     }
   },
-  "main": "./src/index.ts",
-  "module": "./src/index.ts",
+  "main": "./dist/horpey-elysium-vue.umd.js",
+  "module": "./dist/horpey-elysium-vue.es.js",
+  "types": "./dist/types/index.d.ts",
   "files": [
-    "src"
+    "dist"
   ],
   "scripts": {
     "build": "vite build && vue-tsc --emitDeclarationOnly",
