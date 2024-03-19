@@ -1,7 +1,7 @@
 {
   "name": "@horpey/elysium-vue",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "packageManager": "pnpm@8.10.5",
   "homepage": "https://elysium-vue.vercel.app",
   "repository": "horpey/elysium-vue",
