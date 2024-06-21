@@ -67,8 +67,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       eslint-plugin-tailwindcss:
-        specifier: 3.14.3
-        version: 3.14.3(tailwindcss@3.4.1)
+        specifier: 3.17.4
+        version: 3.17.4(tailwindcss@3.4.1)
       jsdom:
         specifier: 22.1.0
         version: 22.1.0
@@ -167,8 +167,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       eslint-plugin-tailwindcss:
-        specifier: 3.14.3
-        version: 3.14.3(tailwindcss@3.4.1)
+        specifier: 3.17.4
+        version: 3.17.4(tailwindcss@3.4.1)
       jsdom:
         specifier: 22.1.0
         version: 22.1.0
@@ -3005,9 +3005,9 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-tailwindcss@3.14.3(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-1MKT8CrVuqVJleHxb7ICHsF2QwO0G+VJ28athTtlcOkccp0qmwK7nCUa1C9paCZ+VVgQU4fonsjLz/wUxoMHJQ==}
-    engines: {node: '>=12.13.0'}
+  /eslint-plugin-tailwindcss@3.17.4(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-gJAEHmCq2XFfUP/+vwEfEJ9igrPeZFg+skeMtsxquSQdxba9XRk5bn0Bp9jxG1VV9/wwPKi1g3ZjItu6MIjhNg==}
+    engines: {node: '>=18.12.0'}
     peerDependencies:
       tailwindcss: ^3.4.0
     dependencies:
