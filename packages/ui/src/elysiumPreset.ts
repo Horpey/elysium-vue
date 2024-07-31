@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
+
+// import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   content: {
@@ -76,9 +77,10 @@ export default {
         'bottom-dark': '1px 6px #00000024',
       },
     },
+    // TODO: Replace defaultTheme
     fontFamily: {
-      sans: ['Chakra Petch', ...defaultTheme.fontFamily.sans],
-      mono: ['Chakra Petch', ...defaultTheme.fontFamily.mono],
+      sans: ['Chakra Petch', 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      mono: ['Chakra Petch', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
     },
   },
 } satisfies Config
