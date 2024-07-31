@@ -16,7 +16,7 @@
     "@unhead/vue": "1.8.10",
     "@vueuse/core": "10.8.0",
     "vue": "3.3.8",
-    "vue-router": "4.2.5"
+    "vue-router": "4.4.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.6.4",
