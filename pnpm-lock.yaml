@@ -73,8 +73,8 @@ importers:
         specifier: 22.1.0
         version: 22.1.0
       pnpm:
-        specifier: 8.10.5
-        version: 8.10.5
+        specifier: 8.15.9
+        version: 8.15.9
       postcss:
         specifier: 8.4.35
         version: 8.4.35
@@ -173,8 +173,8 @@ importers:
         specifier: 22.1.0
         version: 22.1.0
       pnpm:
-        specifier: 8.10.5
-        version: 8.10.5
+        specifier: 8.15.9
+        version: 8.15.9
       postcss:
         specifier: 8.4.35
         version: 8.4.35
@@ -4508,8 +4508,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@8.10.5:
-    resolution: {integrity: sha512-nBYfQz2FVRxY8bOhCxjMPfcrWgLSyu5lZswFtvIK3e+UfnldkMOQM7+S3lUXfq1p2H9iqdqtyR56LjtY9JNToA==}
+  /pnpm@8.15.9:
+    resolution: {integrity: sha512-SZQ0ydj90aJ5Tr9FUrOyXApjOrzuW7Fee13pDzL0e1E6ypjNXP0AHDHw20VLw4BO3M1XhQHkyik6aBYWa72fgQ==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
